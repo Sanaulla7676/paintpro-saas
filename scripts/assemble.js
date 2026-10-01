@@ -8,5 +8,6 @@ const output = template.replace('/*__PRODUCTS_CATALOG_PLACEHOLDER__*/', catalogJ
 fs.writeFileSync('index.html', output, 'utf8');
 fs.writeFileSync('PaintPro-SaaS-Premium.html', output, 'utf8');
 fs.writeFileSync('public/wallcare.html', output, 'utf8');
+fs.writeFileSync('public/index.html', output, 'utf8');
 
-console.log('Successfully generated index.html, PaintPro-SaaS-Premium.html, and public/wallcare.html! Size:', Math.round(output.length / 1024), 'KB');
+console.log('Successfully generated index.html, PaintPro-SaaS-Premium.html, public/wallcare.html, and public/index.html! Size:', Math.round(output.length / 1024), 'KB');

@@ -67,7 +67,7 @@ export async function updateSession(request: NextRequest) {
 
     if (user && request.nextUrl.pathname === '/login') {
       const redirectUrl = request.nextUrl.clone();
-      redirectUrl.pathname = '/dashboard';
+      redirectUrl.pathname = '/index.html';
       return NextResponse.redirect(redirectUrl);
     }
   } catch (error) {
