@@ -2562,7 +2562,7 @@ function closeProductModal() {
   document.getElementById('productModal').classList.remove('show');
 }
 
-// Step 1: Select Brand
+// Step 1: Select Brand or Fast Search across all 390 products
 function renderModalStep1() {
   updateModalStepIndicator(1);
   const container = document.getElementById('modalStepContent');
@@ -2571,43 +2571,95 @@ function renderModalStep1() {
     {
       name: 'Asian Paints',
       cls: 'brand-asian',
-      initials: 'AP',
-      desc: 'Royale Luxury Emulsion, Apcolite, Apex Ultima, SmartCare Waterproofing & WoodTech Finishes.',
-      count: products.filter(p => p.brand === 'Asian Paints').length
+      tagline: 'Har Ghar Kuch Kehta Hai',
+      desc: 'Royale Luxury, Apcolite, Apex Ultima, SmartCare Waterproofing, WoodTech & Undercoats.',
+      border: '#e8521a',
+      count: products.filter(p => p.brand === 'Asian Paints').length,
+      logoSvg: '<svg width="140" height="48" viewBox="0 0 170 54"><text x="4" y="32" font-family=\"Arial Black,sans-serif\" font-size=\"24\" font-weight=\"900\" fill=\"#e8521a\">asian</text><text x=\"78\" y=\"32\" font-family=\"Arial,sans-serif\" font-size=\"24\" font-weight=\"400\" fill=\"#2d3748\">paints</text><circle cx=\"152\" cy=\"18\" r=\"8\" fill=\"#e8521a\"/><circle cx=\"162\" cy=\"28\" r=\"5\" fill=\"#f5a623\"/></svg>'
     },
     {
       name: 'Berger Paints',
       cls: 'brand-berger',
-      initials: 'BP',
+      tagline: 'Paint Your Imagination · Since 1760',
       desc: 'Silk Glamor, Bison Emulsion, WeatherCoat Long Life, HomeShield Dampstop Solutions.',
-      count: products.filter(p => p.brand === 'Berger Paints').length
+      border: '#7e22ce',
+      count: products.filter(p => p.brand === 'Berger Paints').length,
+      logoSvg: '<svg width="140" height="48" viewBox="0 0 160 54"><text x="4" y="38" font-family=\"Georgia,serif\" font-size=\"32\" font-weight=\"900\" fill=\"#6d1f7e\">Berger</text><text x=\"6\" y=\"50\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#9c4daa\" letter-spacing=\"2\">Since 1760</text></svg>'
     },
     {
       name: 'Birla Opus',
       cls: 'brand-birla',
-      initials: 'BO',
-      desc: 'One Luxury, Calista 5X Washability, Style Economy & Alldry Waterproofing Membrane.',
-      count: products.filter(p => p.brand === 'Birla Opus').length
+      tagline: 'Bring Your Walls to Life · Birla Group',
+      desc: 'One Luxury, Calista 5X Washability, Style Series, Alldry Waterproofing & Tools.',
+      border: '#111111',
+      count: products.filter(p => p.brand === 'Birla Opus').length,
+      logoSvg: '<svg width="140" height="48" viewBox="0 0 170 54"><text x=\"4\" y=\"20\" font-family=\"Arial Black,sans-serif\" font-size=\"12\" font-weight=\"900\" fill=\"#111\">BIRLA</text><text x=\"4\" y=\"44\" font-family=\"Arial Black,sans-serif\" font-size=\"24\" font-weight=\"900\" fill=\"#111\">opus.</text><circle cx=\"140\" cy=\"12\" r=\"9\" fill=\"#00b89c\"/><circle cx=\"130\" cy=\"24\" r=\"6\" fill=\"#f5a623\"/><circle cx=\"142\" cy=\"25\" r=\"6\" fill=\"#7b5ea7\"/><circle cx=\"133\" cy=\"36\" r=\"5\" fill=\"#e8521a\"/></svg>'
     }
   ];
 
-  container.innerHTML = '<div style="margin-bottom:18px">' +
-      '<h4 style="margin:0 0 4px;font-size:16px;color:var(--ink)">Step 1: Choose Official Brand</h4>' +
-      '<p style="margin:0;font-size:12px;color:var(--ink-muted)">Select the manufacturer for official specification, coverage and approved price book.</p>' +
+  container.innerHTML = '<div style="margin-bottom:14px">' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:8px">' +
+        '<div>' +
+          '<h4 style="margin:0 0 4px;font-size:16px;color:var(--ink)">Step 1: Choose Brand or Instant Search</h4>' +
+          '<p style="margin:0;font-size:12px;color:var(--ink-muted)">Select an official manufacturer or find any product across all 390 items instantly.</p>' +
+        '</div>' +
+        '<span style="font-size:12px;font-weight:700;color:var(--primary);background:var(--primary-subtle);padding:4px 10px;border-radius:20px">' + products.length + ' Products Master Catalog</span>' +
+      '</div>' +
+      '<div style="position:relative;margin-bottom:16px">' +
+        '<input id="modalUniversalInput" type="text" placeholder="⚡ Quick Search across all 390 products (e.g. Royale Glitz, Apex Protek, HomeShield, Calista, One Pure)..." ' +
+          'style="width:100%;padding:11px 16px 11px 40px;border-radius:12px;border:1.5px solid var(--border);font-size:13.5px;background:white;outline:none;transition:border-color .2s" ' +
+          'onfocus="this.style.borderColor=\'var(--primary)\'" onblur="this.style.borderColor=\'var(--border)\'" ' +
+          'oninput="handleModalUniversalSearch(this.value)"/>' +
+        '<svg style="position:absolute;left:13px;top:13px;color:#94a3b8" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>' +
+      '</div>' +
     '</div>' +
-    '<div class="brands-picker-grid">' +
+    '<div id="modalUniversalResults" style="display:none;margin-bottom:16px"></div>' +
+    '<div id="modalBrandsGrid" class="brands-picker-grid">' +
       brandCards.map(b => {
         return '<div class="brand-picker-card" onclick="selectBrandForModal(\'' + b.name + '\')">' +
-          '<div class="brand-icon-art ' + b.cls + '">' + b.initials + '</div>' +
+          '<div style="height:50px;display:flex;align-items:center;justify-content:center;margin-bottom:6px">' + b.logoSvg + '</div>' +
           '<div>' +
-            '<h4>' + b.name + '</h4>' +
-            '<p>' + b.desc + '</p>' +
+            '<h4 style="margin:0 0 2px;font-size:15px;color:var(--ink)">' + b.name + '</h4>' +
+            '<div style="font-size:11px;color:' + b.border + ';font-weight:700;margin-bottom:4px">' + b.tagline + '</div>' +
+            '<p style="margin:0;font-size:11px;color:var(--ink-muted);line-height:1.3">' + b.desc + '</p>' +
           '</div>' +
-          '<div>' +
-            '<span class="badge-count">' + b.count + ' Products Available</span>' +
+          '<div style="margin-top:8px">' +
+            '<span class="badge-count" style="font-weight:700">' + b.count + ' Verified Products →</span>' +
           '</div>' +
         '</div>';
       }).join('') +
+    '</div>';
+}
+
+function handleModalUniversalSearch(q) {
+  const query = (q || '').trim().toLowerCase();
+  const resultsDiv = document.getElementById('modalUniversalResults');
+  const brandsGrid = document.getElementById('modalBrandsGrid');
+  if (!resultsDiv || !brandsGrid) return;
+
+  if (query.length < 2) {
+    resultsDiv.style.display = 'none';
+    brandsGrid.style.display = 'grid';
+    return;
+  }
+
+  const matched = products.filter(p =>
+    p.name.toLowerCase().includes(query) ||
+    p.brand.toLowerCase().includes(query) ||
+    p.category.toLowerCase().includes(query) ||
+    (p.subcategory && p.subcategory.toLowerCase().includes(query)) ||
+    (p.description && p.description.toLowerCase().includes(query))
+  );
+
+  brandsGrid.style.display = 'none';
+  resultsDiv.style.display = 'block';
+
+  resultsDiv.innerHTML = '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">' +
+      '<div style="font-size:13px;font-weight:700;color:var(--ink)">Found ' + matched.length + ' matching products</div>' +
+      '<button class="btn-pill-light" onclick="document.getElementById(\'modalUniversalInput\').value=\'\';handleModalUniversalSearch(\'\')">✕ Clear Search</button>' +
+    '</div>' +
+    '<div class="product-picker-list" style="max-height:420px;overflow-y:auto">' +
+      renderProductPickerCardsHTML(matched) +
     '</div>';
 }
 
@@ -2621,26 +2673,33 @@ function renderModalStep2() {
   updateModalStepIndicator(2);
   const container = document.getElementById('modalStepContent');
   
-  // Get all unique categories for this brand
   const brandProducts = products.filter(p => p.brand === selectedBrandForModal);
   const categories = [...new Set(brandProducts.map(p => p.category))].sort();
 
-  container.innerHTML = '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">' +
+  const brandColor = selectedBrandForModal === 'Asian Paints' ? '#e8521a' : selectedBrandForModal === 'Berger Paints' ? '#7e22ce' : '#111';
+
+  container.innerHTML = '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px">' +
       '<div>' +
-        '<h4 style="margin:0 0 4px;font-size:16px;color:var(--ink)">Step 2: Choose Coating Category for ' + selectedBrandForModal + '</h4>' +
-        '<p style="margin:0;font-size:12px;color:var(--ink-muted)">Filter by surface system (Interior, Exterior, Waterproofing, Putty, Primers)</p>' +
+        '<h4 style="margin:0 0 4px;font-size:16px;color:var(--ink)">Step 2: Choose Coating Category</h4>' +
+        '<p style="margin:0;font-size:12px;color:var(--ink-muted)">' +
+          '<b style="color:' + brandColor + '">' + selectedBrandForModal + '</b> · ' + brandProducts.length + ' official products across ' + categories.length + ' systems' +
+        '</p>' +
       '</div>' +
-      '<button class="btn-pill-light" onclick="renderModalStep1()">← Back to Brands</button>' +
+      '<button class="btn-pill-light" onclick="renderModalStep1()">← Change Brand</button>' +
     '</div>' +
     '<div class="cat-picker-grid">' +
       categories.map(c => {
         const count = brandProducts.filter(p => p.category === c).length;
+        const icon = c.includes('Interior') ? '🏠' : c.includes('Exterior') ? '🏢' : c.includes('Waterproof') ? '💧' : c.includes('Wood') ? '🪵' : c.includes('Primer') || c.includes('Undercoat') ? '🎨' : c.includes('Texture') ? '🧱' : c.includes('Enamel') ? '✨' : c.includes('Putty') ? '⚙️' : '🖌️';
         return '<div class="cat-picker-card" onclick="selectCategoryForModal(\'' + esc(c) + '\')">' +
-          '<div>' +
-            '<b>' + esc(c) + '</b>' +
-            '<small>' + count + ' official products</small>' +
+          '<div style="display:flex;align-items:center;gap:10px">' +
+            '<span style="font-size:22px">' + icon + '</span>' +
+            '<div>' +
+              '<b style="font-size:13px;display:block">' + esc(c) + '</b>' +
+              '<small style="color:var(--ink-muted)">' + count + ' products</small>' +
+            '</div>' +
           '</div>' +
-          '<span style="font-size:16px;color:var(--primary);font-weight:900">›</span>' +
+          '<span style="font-size:16px;color:' + brandColor + ';font-weight:900">›</span>' +
         '</div>';
       }).join('') +
     '</div>';
@@ -2657,18 +2716,34 @@ function renderModalStep3() {
   const container = document.getElementById('modalStepContent');
 
   let list = products.filter(p => p.brand === selectedBrandForModal && p.category === selectedCategoryForModal);
+  const brandColor = selectedBrandForModal === 'Asian Paints' ? '#e8521a' : selectedBrandForModal === 'Berger Paints' ? '#7e22ce' : '#111';
 
-  container.innerHTML = '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">' +
+  const roomOptions = quoteDraft.rooms.map(r => '<option value="' + esc(r.name) + '">' + esc(r.name) + '</option>').join('');
+
+  container.innerHTML = '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px">' +
       '<div>' +
-        '<h4 style="margin:0 0 4px;font-size:16px;color:var(--ink)">Step 3: Pick Product & Attach to Quote</h4>' +
-        '<p style="margin:0;font-size:12px;color:var(--ink-muted)">' + selectedBrandForModal + ' · ' + selectedCategoryForModal + ' (' + list.length + ' products)</p>' +
+        '<h4 style="margin:0 0 4px;font-size:16px;color:var(--ink)">Step 3: Select Product & Add to Quote</h4>' +
+        '<p style="margin:0;font-size:12px;color:var(--ink-muted)">' +
+          '<b style="color:' + brandColor + '">' + selectedBrandForModal + '</b> › <b>' + selectedCategoryForModal + '</b> (' + list.length + ' products)' +
+        '</p>' +
       '</div>' +
       '<div style="display:flex;gap:8px">' +
-        '<button class="btn-pill-light" onclick="renderModalStep2()">← Back to Categories</button>' +
+        '<button class="btn-pill-light" onclick="renderModalStep2()">← Categories</button>' +
+        '<button class="btn-pill-light" onclick="renderModalStep1()">⌂ Brands</button>' +
       '</div>' +
     '</div>' +
-    '<div class="product-picker-search-bar">' +
-      '<input id="modalSearchFilter" placeholder="Filter by product name, sheen, subcategory or feature..." oninput="filterModalProducts(this.value)"/>' +
+    '<div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;background:#f8fafc;padding:10px 14px;border-radius:12px;border:1px solid var(--border);flex-wrap:wrap">' +
+      '<div style="display:flex;align-items:center;gap:6px">' +
+        '<span style="font-size:12px;font-weight:700;color:var(--ink)">Attach to Room:</span>' +
+        '<select id="modalTargetRoom" style="border:1.5px solid var(--border);border-radius:8px;padding:5px 10px;font-size:12px;background:white;font-weight:600">' +
+          roomOptions +
+        '</select>' +
+      '</div>' +
+      '<div style="flex:1;min-width:200px">' +
+        '<input id="modalSearchFilter" placeholder="Filter ' + selectedCategoryForModal + ' by name, sheen, feature..." ' +
+          'style="width:100%;padding:6px 12px;border-radius:8px;border:1.5px solid var(--border);font-size:12px;background:white" ' +
+          'oninput="filterModalProducts(this.value)"/>' +
+      '</div>' +
     '</div>' +
     '<div class="product-picker-list" id="modalProductList">' +
       renderProductPickerCardsHTML(list) +
@@ -2680,14 +2755,14 @@ function filterModalProducts(q) {
   const list = products.filter(p => 
     p.brand === selectedBrandForModal && 
     p.category === selectedCategoryForModal &&
-    (p.name.toLowerCase().includes(term) || p.description.toLowerCase().includes(term) || p.subcategory.toLowerCase().includes(term))
+    (p.name.toLowerCase().includes(term) || (p.description && p.description.toLowerCase().includes(term)) || (p.subcategory && p.subcategory.toLowerCase().includes(term)))
   );
   document.getElementById('modalProductList').innerHTML = renderProductPickerCardsHTML(list);
 }
 
 function renderProductPickerCardsHTML(list) {
   if (!list.length) {
-    return '<div style="grid-column:1/-1;text-align:center;padding:30px;color:var(--ink-muted)">No matching products found.</div>';
+    return '<div style="grid-column:1/-1;text-align:center;padding:30px;color:var(--ink-muted)">No matching products found. Try a different keyword or category.</div>';
   }
 
   return list.map(p => {
@@ -2700,7 +2775,7 @@ function renderProductPickerCardsHTML(list) {
           '<div class="pcard-title-grp">' +
             '<span class="badge-growth" style="font-size:9.5px;padding:2px 8px;margin-bottom:4px;display:inline-block">' + esc(p.tier) + '</span>' +
             '<h4>' + esc(p.name) + '</h4>' +
-            '<div class="pcard-meta">' + esc(p.brand) + ' · ' + esc(p.subcategory) + '</div>' +
+            '<div class="pcard-meta">' + esc(p.brand) + ' · ' + esc(p.subcategory || p.category) + '</div>' +
           '</div>' +
         '</div>' +
         '<p class="pcard-desc" style="margin-top:10px">' + esc(p.description) + '</p>' +
@@ -2721,7 +2796,7 @@ function renderProductPickerCardsHTML(list) {
       '</div>' +
       '<div class="pcard-footer">' +
         '<div class="pcard-rate-label">' +
-          '<small>Standard Working Rate</small>' +
+          '<small>Benchmark MRP: ' + money(p.mrp) + '</small>' +
           '<b>' + money(p.default_rate) + ' <span style="font-size:11px;font-weight:600">/ sq.ft</span></b>' +
         '</div>' +
         '<button class="btn-choose-this" onclick="confirmProductSelection(\'' + p.id + '\')">' +
@@ -2737,27 +2812,28 @@ function confirmProductSelection(productId) {
   const p = products.find(x => x.id === productId);
   if (!p) return;
 
-  const defaultRoom = quoteDraft.rooms[0]?.name || 'Living Room';
+  const roomSelectEl = document.getElementById('modalTargetRoom');
+  const chosenRoom = (roomSelectEl && roomSelectEl.value) || (quoteDraft.rooms[0]?.name || 'Living Room');
   const defaultZone = (p.category.includes('Exterior') || p.name.includes('Exterior')) ? 'Exterior' : 'Interior';
   const workType = p.category.includes('Putty') ? 'Putty' : p.category.includes('Primer') ? 'Primer' : p.category.includes('Waterproof') ? 'Waterproofing' : 'Topcoat';
   
-  // Calculate default room area
-  const matchedRoom = quoteDraft.rooms.find(r => r.name === defaultRoom);
+  // Calculate room area
+  const matchedRoom = quoteDraft.rooms.find(r => r.name === chosenRoom);
   const roomAreaCalc = matchedRoom ? getRoomArea(matchedRoom) : { walls: 500, ceil: 180, total: 680 };
   const targetArea = defaultZone === 'Exterior' ? (roomAreaCalc.walls || 800) : (roomAreaCalc.walls || 500);
 
   const newLineItem = {
     id: 'i-' + Date.now(),
     type: 'Material',
-    room: defaultRoom,
+    room: chosenRoom,
     zone: defaultZone,
     work: workType,
     productId: p.id,
-    description: p.brand + ' · ' + p.name + ' (' + p.subcategory + ')',
+    description: p.brand + ' · ' + p.name + ' (' + (p.subcategory || p.category) + ')',
     area: targetArea,
     coats: p.recommended_coats,
     coverage: p.coverage,
-    qty: (targetArea * p.recommended_coats) / p.coverage,
+    qty: p.coverage > 0 ? Number(((targetArea * p.recommended_coats) / p.coverage).toFixed(1)) : 1,
     rate: p.default_rate // User can edit this price in the quote anytime!
   };
 
@@ -2772,7 +2848,7 @@ function confirmProductSelection(productId) {
   saveLocalState();
   closeProductModal();
   renderApp();
-  toast('Added ' + p.name + ' to quotation');
+  toast('Added ' + p.name + ' to ' + chosenRoom);
 }
 
 function updateModalStepIndicator(stepNum) {
@@ -2873,16 +2949,23 @@ function _pickBrand(brandName) {
 function _renderCategoryPicker(root) {
   const clr = { 'Asian Paints':'#e8521a', 'Berger Paints':'#7e22ce', 'Birla Opus':'#111' };
   const color = clr[_catalogBrand] || 'var(--primary)';
-  const cats = [...new Set(products.filter(p => p.brand === _catalogBrand).map(p => p.category))].sort();
-  const icons = {
-    'Interior Wall Paint':'🏠','Exterior Wall Paint':'🏢','Waterproofing':'💧',
-    'Primer':'🎨','Metal Primer':'🔩','Surface Preparation':'⚙️',
-    'Wood Finish':'🪵','Enamel Paint':'✨','Interior Wall Texture':'🧱',
-    'Exterior Wall Texture':'🪨','Construction Chemical':'🏗️','Wall Coverings':'🖼️',
-    'Industrial / Enamel':'🏭','Tile Installation':'◻️','Wood Adhesive':'🪚',
-    'Contact Adhesive':'🧲','General Glue':'🫙','Tape & Accessories':'📦',
-    'Instant Fixative':'⚡','Fast Epoxy':'🔬','Structural Epoxy':'🏛️',
-    'Multi-Substrate Adhesive':'🔗','Application Tool':'🖌️'
+  const getCatIcon = (c) => {
+    if (c.includes('Interior')) return '🏠';
+    if (c.includes('Exterior') && c.includes('Texture')) return '🧱';
+    if (c.includes('Exterior')) return '🏢';
+    if (c.includes('Waterproof')) return '💧';
+    if (c.includes('Wood')) return '🪵';
+    if (c.includes('Primer') || c.includes('Undercoat')) return '🎨';
+    if (c.includes('Texture')) return '🧱';
+    if (c.includes('Enamel')) return '✨';
+    if (c.includes('Wallpaper') || c.includes('Covering')) return '🖼️';
+    if (c.includes('Putty') || c.includes('Cement')) return '⚙️';
+    if (c.includes('Roof') || c.includes('Floor')) return '🏛️';
+    if (c.includes('Ceiling')) return '⛅';
+    if (c.includes('DIY') || c.includes('Aerosol')) return '🧪';
+    if (c.includes('Tool')) return '🔧';
+    if (c.includes('Technical') || c.includes('Data-sheet')) return '📑';
+    return '🖌️';
   };
 
   root.innerHTML =
@@ -2898,7 +2981,7 @@ function _renderCategoryPicker(root) {
           'style="cursor:pointer;background:white;border:1.5px solid var(--border);border-radius:16px;padding:18px 12px;text-align:center;transition:all .18s"' +
           ' onmouseover="this.style.borderColor=\'' + color + '\';this.style.transform=\'translateY(-3px)\';this.style.boxShadow=\'0 8px 20px rgba(0,0,0,.1)\'"' +
           ' onmouseout="this.style.borderColor=\'var(--border)\';this.style.transform=\'none\';this.style.boxShadow=\'none\'">' +
-          '<div style="font-size:26px;margin-bottom:8px">' + (icons[c] || '🖌️') + '</div>' +
+          '<div style="font-size:26px;margin-bottom:8px">' + getCatIcon(c) + '</div>' +
           '<div style="font-weight:700;font-size:12px;color:var(--ink);margin-bottom:6px;line-height:1.3">' + esc(c) + '</div>' +
           '<div style="font-size:11px;font-weight:800;color:' + color + ';background:' + color + '15;border-radius:20px;padding:2px 10px;display:inline-block">' + cnt + ' products</div>' +
         '</div>';
