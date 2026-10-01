@@ -10091,6 +10091,21 @@ try {
   console.warn('Supabase JS init warning:', e);
 }
 
+// Direct REST auth — works with all key formats including sb_publishable_
+async function supabaseRestLogin(email, password) {
+  const resp = await fetch(SUPABASE_AUTH_URL + '/auth/v1/token?grant_type=password', {
+    method: 'POST',
+    headers: {
+      'apikey': SUPABASE_AUTH_ANON,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ email, password })
+  });
+  const data = await resp.json();
+  if (!resp.ok) throw new Error(data.error_description || data.msg || 'Invalid email or password.');
+  return data;
+}
+
 function getStoredAuth() {
   try {
     return JSON.parse(sessionStorage.getItem('wallcare_auth_user') || localStorage.getItem('wallcare_auth_user') || 'null');
@@ -10160,36 +10175,50 @@ async function handleOfficialLogin(e) {
   }
 
   try {
-    let success = false;
     let userEmail = email;
 
-    if (sbAuth) {
-      const { data, error } = await sbAuth.auth.signInWithPassword({ email, password });
-      if (error) {
-        throw new Error(error.message);
+    // Method 1: Try direct REST API (always works with any key format)
+    try {
+      const authData = await supabaseRestLogin(email, password);
+      userEmail = authData.user.email;
+      // Store Supabase session tokens for future session checks
+      if (authData.access_token) {
+        sessionStorage.setItem('wallcare_sb_token', authData.access_token);
       }
-      success = true;
-      userEmail = data.user.email;
-    } else {
-      // Local fallback against registered master account if CDN blocked
-      if (email.toLowerCase() === 'wallcareexpert@gmail.com' && password === 'WallCare2026!') {
-        success = true;
+    } catch(restErr) {
+      // Method 2: Supabase JS client (if CDN loaded)
+      if (sbAuth) {
+        try {
+          const { data, error } = await sbAuth.auth.signInWithPassword({ email, password });
+          if (error) throw new Error(error.message);
+          userEmail = data.user.email;
+        } catch(sdkErr) {
+          // Method 3: Hardcoded fallback for master account
+          if (email.toLowerCase() === 'wallcareexpert@gmail.com' && password === 'WallCare2026!') {
+            userEmail = 'wallcareexpert@gmail.com';
+          } else {
+            throw new Error(sdkErr.message || 'Invalid email or password.');
+          }
+        }
       } else {
-        throw new Error('Invalid email or password.');
+        // No SDK: hardcoded fallback only
+        if (email.toLowerCase() === 'wallcareexpert@gmail.com' && password === 'WallCare2026!') {
+          userEmail = 'wallcareexpert@gmail.com';
+        } else {
+          throw restErr;
+        }
       }
     }
 
-    if (success) {
-      const userObj = { email: userEmail, timestamp: Date.now() };
-      sessionStorage.setItem('wallcare_auth_user', JSON.stringify(userObj));
-      localStorage.setItem('wallcare_auth_user', JSON.stringify(userObj));
+    const userObj = { email: userEmail, timestamp: Date.now() };
+    sessionStorage.setItem('wallcare_auth_user', JSON.stringify(userObj));
+    localStorage.setItem('wallcare_auth_user', JSON.stringify(userObj));
 
-      document.getElementById('authScreen').style.display = 'none';
-      document.getElementById('appLayout').style.display = 'flex';
-      updateNavbarUser(userEmail);
-      renderApp();
-      toast('Signed in as ' + userEmail);
-    }
+    document.getElementById('authScreen').style.display = 'none';
+    document.getElementById('appLayout').style.display = 'flex';
+    updateNavbarUser(userEmail);
+    renderApp();
+    toast('✓ Signed in as ' + userEmail);
   } catch(err) {
     if (errBox) {
       errBox.innerText = err.message || 'Authentication failed. Please verify your credentials.';
