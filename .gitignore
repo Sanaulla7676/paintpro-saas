@@ -29,3 +29,5 @@ yarn-error.log*
 
 # Supabase local temp
 .supabase/
+
+.vercel
