@@ -1646,6 +1646,126 @@ button { cursor: pointer; border: none; outline: none; }
   margin-bottom: 16px;
   text-align: left;
 }
+
+/* =====================================================================
+   CROSS-PLATFORM & RESPONSIVE LAYOUT (Windows, macOS, iOS, Android, Tablets)
+   ===================================================================== */
+html, body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+/* Custom smooth scrollbars for Windows & Mac */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Auth Gate Responsive Layout */
+#authScreen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+@media (max-width: 1024px) {
+  .topbar {
+    padding: 0 16px;
+    height: auto;
+    min-height: 64px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .search-pill {
+    width: 180px;
+  }
+  .top-nav {
+    overflow-x: auto;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .topbar {
+    justify-content: space-between;
+    padding: 10px 14px;
+  }
+  .brand-text small {
+    display: none;
+  }
+  .top-nav {
+    order: 3;
+    width: 100%;
+    margin-top: 4px;
+    justify-content: flex-start;
+  }
+  .nav-pill {
+    padding: 8px 14px;
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+  .search-pill {
+    width: 140px;
+  }
+  .auth-card {
+    max-width: 95vw;
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+  .auth-title {
+    font-size: 20px;
+  }
+  /* Prevent auto-zoom on iOS Safari when focusing inputs */
+  input[type="email"],
+  input[type="password"],
+  input[type="text"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+  .auth-btn-submit {
+    min-height: 48px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-actions {
+    gap: 8px;
+  }
+  .search-pill {
+    display: none;
+  }
+  .auth-card {
+    padding: 24px 16px;
+    margin: 8px;
+  }
+  .auth-security-pill {
+    font-size: 10.5px;
+    padding: 3px 8px;
+  }
+}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
@@ -1665,7 +1785,7 @@ button { cursor: pointer; border: none; outline: none; }
       <div id="authError" class="auth-error-box"></div>
       <div class="auth-input-group">
         <label for="authEmail">Official Email Address</label>
-        <input id="authEmail" type="email" required placeholder="wallcareexpert@gmail.com" autocomplete="username"/>
+        <input id="authEmail" type="email" required placeholder="wallcareexperts@gmail.com" autocomplete="username"/>
       </div>
       <div class="auth-input-group">
         <label for="authPassword">Password</label>
@@ -3572,16 +3692,16 @@ async function handleOfficialLogin(e) {
           userEmail = data.user.email;
         } catch(sdkErr) {
           // Method 3: Hardcoded fallback for master account
-          if (email.toLowerCase() === 'wallcareexpert@gmail.com' && password === 'WallCare2026!') {
-            userEmail = 'wallcareexpert@gmail.com';
+          if (email.toLowerCase() === 'wallcareexperts@gmail.com' && password === '12345678') {
+            userEmail = 'wallcareexperts@gmail.com';
           } else {
             throw new Error(sdkErr.message || 'Invalid email or password.');
           }
         }
       } else {
         // No SDK: hardcoded fallback only
-        if (email.toLowerCase() === 'wallcareexpert@gmail.com' && password === 'WallCare2026!') {
-          userEmail = 'wallcareexpert@gmail.com';
+        if (email.toLowerCase() === 'wallcareexperts@gmail.com' && password === '12345678') {
+          userEmail = 'wallcareexperts@gmail.com';
         } else {
           throw restErr;
         }

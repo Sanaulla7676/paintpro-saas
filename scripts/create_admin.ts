@@ -8,8 +8,8 @@ const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY, {
 });
 
 async function createAdmin() {
-  const email = 'admin@paintpro.in';
-  const password = 'PaintPro2026!';
+  const email = 'wallcareexperts@gmail.com';
+  const password = '12345678';
 
   console.log(`Creating/updating user: ${email}...`);
 
