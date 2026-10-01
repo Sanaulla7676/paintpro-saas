@@ -1487,14 +1487,192 @@ button { cursor: pointer; border: none; outline: none; }
   border-top: 1px dashed #94a3b8;
   margin-top: 28px;
   padding-top: 4px;
+.btn-signout {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #b91c1c;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 11px;
   font-weight: 700;
-  color: #334155;
+  cursor: pointer;
+  transition: all .18s;
+  margin-left: 8px;
+}
+.btn-signout:hover {
+  background: #fecaca;
+}
+
+/* Auth Gate Styles */
+#authScreen {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #f0fdf4 0%, #f8fafc 45%, #e2e8f0 100%);
+  padding: 20px;
+}
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: 28px;
+  padding: 40px 36px;
+  box-shadow: 0 25px 60px -15px rgba(0,0,0,0.12);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.auth-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #047857, #10b981, #059669);
+}
+.auth-logo-badge {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #047857, #059669);
+  color: white;
+  font-weight: 900;
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  box-shadow: 0 10px 25px rgba(4,120,87,0.3);
+}
+.auth-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+.auth-title span {
+  color: #047857;
+}
+.auth-subtitle {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin: 0 0 16px;
+}
+.auth-security-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 22px;
+}
+.auth-input-group {
+  text-align: left;
+  margin-bottom: 16px;
+}
+.auth-input-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.auth-input-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1.5px solid var(--border);
+  font-size: 14px;
+  outline: none;
+  background: #f8fafc;
+  transition: all .2s;
+  box-sizing: border-box;
+}
+.auth-input-group input:focus {
+  background: white;
+  border-color: #047857;
+  box-shadow: 0 0 0 3px rgba(4,120,87,0.12);
+}
+.auth-btn-submit {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #047857, #059669);
+  color: white;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .2s;
+  box-shadow: 0 6px 20px rgba(4,120,87,0.25);
+  margin-top: 10px;
+}
+.auth-btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(4,120,87,0.35);
+}
+.auth-btn-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+.auth-error-box {
+  display: none;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  font-size: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  text-align: left;
 }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
 
-<div class="app-layout">
+<!-- Official Security Login Gate -->
+<div id="authScreen" style="display:none">
+  <div class="auth-card">
+    <div class="auth-logo-badge">WCE</div>
+    <h2 class="auth-title">WallCare <span>Experts</span></h2>
+    <div class="auth-subtitle">Official Painter & Waterproofing Portal</div>
+    <div class="auth-security-pill">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      Official Authentication Required
+    </div>
+    <form id="authLoginForm" onsubmit="handleOfficialLogin(event)">
+      <div id="authError" class="auth-error-box"></div>
+      <div class="auth-input-group">
+        <label for="authEmail">Official Email Address</label>
+        <input id="authEmail" type="email" required placeholder="wallcareexpert@gmail.com" autocomplete="username"/>
+      </div>
+      <div class="auth-input-group">
+        <label for="authPassword">Password</label>
+        <input id="authPassword" type="password" required placeholder="••••••••" autocomplete="current-password"/>
+      </div>
+      <button id="authBtn" type="submit" class="auth-btn-submit">
+        Sign In to Workspace →
+      </button>
+      <div style="font-size:11px;color:#94a3b8;margin-top:18px">
+        Protected workspace for authorized WallCare Experts personnel only.
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="app-layout" id="appLayout" style="display:none">
   <!-- Topbar Header -->
   <header class="topbar">
     <a href="#" class="brand-wrap" onclick="setView('dashboard');return false;">
@@ -1537,11 +1715,12 @@ button { cursor: pointer; border: none; outline: none; }
       </button>
 
       <div class="user-profile">
-        <div class="user-avatar">W</div>
+        <div class="user-avatar" id="navUserAvatar">W</div>
         <div class="user-info">
-          <b>WallCare Team</b>
-          <span>Senior Estimator</span>
+          <b id="navUserName">WallCare Team</b>
+          <span id="navUserRole">Senior Estimator</span>
         </div>
+        <button class="btn-signout" onclick="handleSignOut()">Sign Out</button>
       </div>
     </div>
   </header>
@@ -2949,6 +3128,7 @@ function _pickBrand(brandName) {
 function _renderCategoryPicker(root) {
   const clr = { 'Asian Paints':'#e8521a', 'Berger Paints':'#7e22ce', 'Birla Opus':'#111' };
   const color = clr[_catalogBrand] || 'var(--primary)';
+  const cats = [...new Set(products.filter(p => p.brand === _catalogBrand).map(p => p.category))].sort();
   const getCatIcon = (c) => {
     if (c.includes('Interior')) return '🏠';
     if (c.includes('Exterior') && c.includes('Texture')) return '🧱';
@@ -3266,8 +3446,160 @@ function shareViaWhatsApp() {
   window.open(waUrl, '_blank');
 }
 
-// Initial Boot
-renderApp();
+// =====================================================================
+// AUTHENTICATION & SECURITY GATE
+// =====================================================================
+const SUPABASE_AUTH_URL = 'https://glqcwjopavpvnixhpxne.supabase.co';
+const SUPABASE_AUTH_ANON = 'sb_publishable_WB-YaPK9ov4sYmLh00JttQ_35knPt-Z';
+let sbAuth = null;
+try {
+  if (typeof window.supabase !== 'undefined' && window.supabase.createClient) {
+    sbAuth = window.supabase.createClient(SUPABASE_AUTH_URL, SUPABASE_AUTH_ANON);
+  }
+} catch(e) {
+  console.warn('Supabase JS init warning:', e);
+}
+
+function getStoredAuth() {
+  try {
+    return JSON.parse(sessionStorage.getItem('wallcare_auth_user') || localStorage.getItem('wallcare_auth_user') || 'null');
+  } catch(e) { return null; }
+}
+
+async function checkAuthGate() {
+  const authScreen = document.getElementById('authScreen');
+  const appLayout = document.getElementById('appLayout');
+
+  // Check stored active session first
+  const stored = getStoredAuth();
+  if (stored && stored.email) {
+    if (authScreen) authScreen.style.display = 'none';
+    if (appLayout) appLayout.style.display = 'flex';
+    updateNavbarUser(stored.email);
+    renderApp();
+    return;
+  }
+
+  // If Supabase client is available, verify live session
+  if (sbAuth) {
+    try {
+      const { data: { session } } = await sbAuth.auth.getSession();
+      if (session && session.user) {
+        const userObj = { email: session.user.email, id: session.user.id };
+        sessionStorage.setItem('wallcare_auth_user', JSON.stringify(userObj));
+        localStorage.setItem('wallcare_auth_user', JSON.stringify(userObj));
+        if (authScreen) authScreen.style.display = 'none';
+        if (appLayout) appLayout.style.display = 'flex';
+        updateNavbarUser(userObj.email);
+        renderApp();
+        return;
+      }
+    } catch(e) {
+      console.warn('Session check error:', e);
+    }
+  }
+
+  // Not authenticated: Lock workspace and reveal official login screen
+  if (appLayout) appLayout.style.display = 'none';
+  if (authScreen) authScreen.style.display = 'flex';
+}
+
+async function handleOfficialLogin(e) {
+  if (e) e.preventDefault();
+  const emailInput = document.getElementById('authEmail');
+  const passInput = document.getElementById('authPassword');
+  const errBox = document.getElementById('authError');
+  const btn = document.getElementById('authBtn');
+
+  const email = (emailInput?.value || '').trim();
+  const password = passInput?.value || '';
+
+  if (!email || !password) {
+    if (errBox) {
+      errBox.innerText = 'Please enter both your official email and password.';
+      errBox.style.display = 'block';
+    }
+    return;
+  }
+
+  if (errBox) errBox.style.display = 'none';
+  if (btn) {
+    btn.disabled = true;
+    btn.innerText = 'Verifying Credentials…';
+  }
+
+  try {
+    let success = false;
+    let userEmail = email;
+
+    if (sbAuth) {
+      const { data, error } = await sbAuth.auth.signInWithPassword({ email, password });
+      if (error) {
+        throw new Error(error.message);
+      }
+      success = true;
+      userEmail = data.user.email;
+    } else {
+      // Local fallback against registered master account if CDN blocked
+      if (email.toLowerCase() === 'wallcareexpert@gmail.com' && password === 'WallCare2026!') {
+        success = true;
+      } else {
+        throw new Error('Invalid email or password.');
+      }
+    }
+
+    if (success) {
+      const userObj = { email: userEmail, timestamp: Date.now() };
+      sessionStorage.setItem('wallcare_auth_user', JSON.stringify(userObj));
+      localStorage.setItem('wallcare_auth_user', JSON.stringify(userObj));
+
+      document.getElementById('authScreen').style.display = 'none';
+      document.getElementById('appLayout').style.display = 'flex';
+      updateNavbarUser(userEmail);
+      renderApp();
+      toast('Signed in as ' + userEmail);
+    }
+  } catch(err) {
+    if (errBox) {
+      errBox.innerText = err.message || 'Authentication failed. Please verify your credentials.';
+      errBox.style.display = 'block';
+    }
+  } finally {
+    if (btn) {
+      btn.disabled = false;
+      btn.innerText = 'Sign In to Workspace →';
+    }
+  }
+}
+
+function handleSignOut() {
+  if (sbAuth) {
+    try { sbAuth.auth.signOut(); } catch(e) {}
+  }
+  sessionStorage.removeItem('wallcare_auth_user');
+  localStorage.removeItem('wallcare_auth_user');
+
+  const appLayout = document.getElementById('appLayout');
+  const authScreen = document.getElementById('authScreen');
+  if (appLayout) appLayout.style.display = 'none';
+  if (authScreen) authScreen.style.display = 'flex';
+
+  const passInput = document.getElementById('authPassword');
+  if (passInput) passInput.value = '';
+  toast('Signed out successfully');
+}
+
+function updateNavbarUser(email) {
+  const nameEl = document.getElementById('navUserName');
+  const roleEl = document.getElementById('navUserRole');
+  const avatarEl = document.getElementById('navUserAvatar');
+  if (nameEl) nameEl.innerText = email.split('@')[0];
+  if (roleEl) roleEl.innerHTML = '<span style="color:#047857;font-weight:700">● Online</span> · ' + email;
+  if (avatarEl) avatarEl.innerText = (email[0] || 'W').toUpperCase();
+}
+
+// Initial Boot Guard
+checkAuthGate();
 </script>
 </body>
 </html>

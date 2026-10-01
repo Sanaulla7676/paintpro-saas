@@ -67,15 +67,15 @@ function LoginForm() {
         {/* Logo */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 mb-3">
-            <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white font-black text-xl"
-              style={{ background: 'linear-gradient(145deg,#2b3236,#1f2528)' }}>
-              PP
+            <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white font-black text-xl shadow-lg"
+              style={{ background: 'linear-gradient(135deg,#047857,#059669)' }}>
+              WCE
             </div>
           </div>
           <h1 className="text-3xl font-black tracking-tight text-ink">
-            Paint<span style={{ color: '#d2ad76' }}>Pro</span>
+            WallCare <span style={{ color: '#059669' }}>Experts</span>
           </h1>
-          <p className="text-xs uppercase tracking-widest text-muted mt-1">Premium Painter Workspace</p>
+          <p className="text-xs uppercase tracking-widest text-muted mt-1">Official Painter & Waterproofing Portal</p>
         </div>
 
         <div className="bg-white border rounded-3xl shadow-premium p-8"
@@ -121,8 +121,8 @@ function LoginForm() {
                 <button
                   type="submit"
                   disabled={isPending}
-                  className="w-full h-12 rounded-2xl font-bold text-white flex items-center justify-center gap-2 transition-opacity"
-                  style={{ background: isPending ? '#999' : 'linear-gradient(135deg,#2b3236,#1f2528)' }}
+                  className="w-full h-12 rounded-2xl font-bold text-white flex items-center justify-center gap-2 transition-opacity shadow-md"
+                  style={{ background: isPending ? '#999' : 'linear-gradient(135deg,#047857,#059669)' }}
                 >
                   {isPending ? <><Spinner /> Signing in…</> : 'Sign In'}
                 </button>

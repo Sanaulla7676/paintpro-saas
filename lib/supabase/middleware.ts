@@ -53,24 +53,12 @@ export async function updateSession(request: NextRequest) {
       data: { user },
     } = await supabase.auth.getUser();
 
-    // Protected routes
-    const protectedRoutes = [
-      '/dashboard',
-      '/products',
-      '/quotations',
-      '/customers',
-      '/admin',
-      '/settings',
-      '/price-book',
-      '/categories',
-      '/shades',
-      '/saved',
-    ];
-    const isProtectedRoute = protectedRoutes.some((route) =>
-      request.nextUrl.pathname.startsWith(route)
-    );
+    // Strict protection: Every route except /login and /auth requires authentication
+    const isPublicRoute =
+      request.nextUrl.pathname === '/login' ||
+      request.nextUrl.pathname.startsWith('/auth/');
 
-    if (!user && isProtectedRoute) {
+    if (!user && !isPublicRoute) {
       const redirectUrl = request.nextUrl.clone();
       redirectUrl.pathname = '/login';
       redirectUrl.searchParams.set('redirectTo', request.nextUrl.pathname);
