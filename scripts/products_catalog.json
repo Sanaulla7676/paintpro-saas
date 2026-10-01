@@ -1,0 +1,2333 @@
+[
+  {
+    "brand": "Berger Paints",
+    "name": "Silk Glamor High Sheen",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Luxury Emulsion",
+    "description": "Ultra-smooth elastomeric latex film with cross-linking polymer technology for high stain resistance.",
+    "id": "berger-paints-1",
+    "initials": "SG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Silk Glamor Matt",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Luxury Emulsion",
+    "description": "Non-reflective, rich matt finish featuring GreenPro certification and advanced cleanability.",
+    "id": "berger-paints-2",
+    "initials": "SG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Silk Glamor Soft Sheen",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Luxury Emulsion",
+    "description": "Premium soft sheen emulsion delivering enhanced washability and color retention.",
+    "id": "berger-paints-3",
+    "initials": "SG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Silk Glamor Dazzle",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Super Luxury Emulsion",
+    "description": "Super high-sheen architectural coating engineered for maximum washability",
+    "id": "berger-paints-4",
+    "initials": "SG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Silk Breathe Easy",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Eco-Luxury Emulsion",
+    "description": "Environmentally certified low-VOC interior paint featuring anti-bacterial and air-purifying properties.",
+    "id": "berger-paints-5",
+    "initials": "SB"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Easy Clean",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Luxury Emulsion",
+    "description": "Cross-linking polymer emulsion built specifically to resist and scrub away stubborn household stains.",
+    "id": "berger-paints-6",
+    "initials": "EC"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Bison Emulsion",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Economy Emulsion",
+    "description": "Water-based acrylic wall paint providing balanced coverage and a smooth matt surface.",
+    "id": "berger-paints-7",
+    "initials": "BE"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Bison Glow",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Premium Emulsion",
+    "description": "Acrylic interior emulsion formulated to deliver a soft sheen finish with expanded opacity.",
+    "id": "berger-paints-8",
+    "initials": "BG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Bison Lite",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Economy Emulsion",
+    "description": "Budget-conscious interior coating designed as a durable step up from traditional distempers.",
+    "id": "berger-paints-9",
+    "initials": "BL"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Bison Acrylic Distemper",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Economy Distemper",
+    "description": "Acrylic-bound water-based distemper offering high whiteness and uniform shade retention.",
+    "id": "berger-paints-10",
+    "initials": "BA"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Bison Super Distemper",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Economy Distemper",
+    "description": "Anti-peel traditional distemper formulated for economical interior wall maintenance.",
+    "id": "berger-paints-11",
+    "initials": "BS"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Bison Plus Acrylic Distemper",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Economy Distemper",
+    "description": "High-density acrylic distemper providing superior hiding power and brighter coverage.",
+    "id": "berger-paints-12",
+    "initials": "BP"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Rangoli Total Care",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Premium Emulsion",
+    "description": "Bio-resistant interior paint featuring an anti-microbial formulation and smooth finish.",
+    "id": "berger-paints-13",
+    "initials": "RT"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Rangoli Rich Matt",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Premium Emulsion",
+    "description": "100% acrylic emulsion delivering a non-glare,",
+    "id": "berger-paints-14",
+    "initials": "RR"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Silk GlamArt Metallica",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Designer / Metallic",
+    "description": "Multi-surface water-based metallic coating creating luxury accent wall effects.",
+    "id": "berger-paints-15",
+    "initials": "SG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Silk GlamArt Metallica for Designs",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Designer / Metallic",
+    "description": "Slow-drying metallic paint engineered specifically for stenciling and intricate wall patterns.",
+    "id": "berger-paints-16",
+    "initials": "SG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Silk GlamArt Non Metallic",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Designer / Texture",
+    "description": "100% acrylic interior texture coating designed for custom pattern tools and spatial effects.",
+    "id": "berger-paints-17",
+    "initials": "SG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Silk GlamArt Stucco",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Designer / Texture",
+    "description": "Highly washable decorative emulsion simulating natural marble and polished stucco surfaces.",
+    "id": "berger-paints-18",
+    "initials": "SG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Silk Glamart Stones & Tones",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Designer / Texture",
+    "description": "Specialized coating incorporating quartz and marble powders for textured stone aesthetics.",
+    "id": "berger-paints-19",
+    "initials": "SG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Silk Metallics",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Designer / Metallic",
+    "description": "Acrylic water-based metallic finish suitable for accenting interior and exterior surfaces.",
+    "id": "berger-paints-20",
+    "initials": "SM"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "GlamArt Italian Collection Diamond",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Designer / Texture",
+    "description": "Dazzling glitter-infused texture designed to produce starry, reflective wall effects.",
+    "id": "berger-paints-21",
+    "initials": "GI"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "GlamArt Italian Collection Velluto",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Designer / Texture",
+    "description": "Pearlescent velvet-inspired texture offering subtle metallic depth and softness.",
+    "id": "berger-paints-22",
+    "initials": "GI"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "GlamArt Italian Collection Damasco",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Designer / Texture",
+    "description": "Pearlescent damask texture delivering opulent, fabric-like wall designs.",
+    "id": "berger-paints-23",
+    "initials": "GI"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "GlamArt Italian Collection Decorative Primer",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Designer / Primer",
+    "description": "Pigmented acrylic primer with superior adhesion, designed for Italian Collection textures.",
+    "id": "berger-paints-24",
+    "initials": "GI"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "GlamArt Italian Collection Soffio",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Designer / Texture",
+    "description": "Iridescent marble-flaky texture coating creating luxury architectural surfaces.",
+    "id": "berger-paints-25",
+    "initials": "GI"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "GlamArt Italian Collection Panama",
+    "category": "Interior Wall Coatings",
+    "subcategory": "Designer / Texture",
+    "description": "Pearlescent sandblast texture providing a rustic, woven sand pattern.",
+    "id": "berger-paints-26",
+    "initials": "GI"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "WeatherCoat Long Life 15",
+    "category": "Exterior Wall Coatings",
+    "subcategory": "Luxury Exterior Emulsion",
+    "description": "Nano-tech exterior paint featuring elastomeric properties that bridge cracks up to 3.2 mm.",
+    "id": "berger-paints-27",
+    "initials": "WL"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "WeatherCoat Long Life 10",
+    "category": "Exterior Wall Coatings",
+    "subcategory": "Luxury Exterior Emulsion",
+    "description": "High-durability exterior coating backed by a 10-year protection guarantee against severe weather.",
+    "id": "berger-paints-28",
+    "initials": "WL"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "WeatherCoat Anti Dustt Kool",
+    "category": "Exterior Wall Coatings",
+    "subcategory": "Premium Exterior Emulsion",
+    "description": "Heat-reflective nano-tech coating that repels environmental dust and reduces wall temperatures.",
+    "id": "berger-paints-29",
+    "initials": "WA"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "WeatherCoat Long Life PU Tile Coat",
+    "category": "Exterior Wall Coatings",
+    "subcategory": "Roof & Tile Coating",
+    "description": "Polyurethane-modified tile paint engineered for high gloss retention and anti-algal protection.",
+    "id": "berger-paints-30",
+    "initials": "WL"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Walmasta Glow",
+    "category": "Exterior Wall Coatings",
+    "subcategory": "Premium Exterior Emulsion",
+    "description": "Water-based acrylic exterior emulsion providing a subtle soft sheen and weather resistance.",
+    "id": "berger-paints-31",
+    "initials": "WG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Florentina Weather Proof",
+    "category": "Exterior Wall Coatings",
+    "subcategory": "Exterior Texture Finish",
+    "description": "Heavy-duty textured exterior wall coating built to resist harsh climatic weathering.",
+    "id": "berger-paints-32",
+    "initials": "FW"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Luxol PU Enamel",
+    "category": "Enamels",
+    "subcategory": "Premium Synthetic Enamel",
+    "description": "Polyurethane-enriched enamel offering superior viscosity,",
+    "id": "berger-paints-33",
+    "initials": "LP"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Luxol Hi-Gloss",
+    "category": "Enamels",
+    "subcategory": "Premium Synthetic Enamel",
+    "description": "High-sheen solvent-based enamel creating a mirror-like protective coat on wood and metal.",
+    "id": "berger-paints-34",
+    "initials": "LH"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Luxol Satin Enamel",
+    "category": "Enamels",
+    "subcategory": "Premium Satin Enamel",
+    "description": "Low-sheen enamel providing a stain-resistant, smooth satin finish for interior doors and trim.",
+    "id": "berger-paints-35",
+    "initials": "LS"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Luxol Metallics",
+    "category": "Enamels",
+    "subcategory": "Metallic Enamel",
+    "description": "Solvent-based metallic enamel designed for interior and exterior architectural ironwork.",
+    "id": "berger-paints-36",
+    "initials": "LM"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Butterfly GP Enamel",
+    "category": "Enamels",
+    "subcategory": "Economy Synthetic Enamel",
+    "description": "Cost-effective glossy synthetic enamel for general-purpose protection of interior surfaces.",
+    "id": "berger-paints-37",
+    "initials": "BG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Imperia Trendz",
+    "category": "Wood Finishes",
+    "subcategory": "Super Luxury 2K PU",
+    "description": "Acrylic two-component polyurethane system providing pearl and designer finishes for luxury joinery.",
+    "id": "berger-paints-38",
+    "initials": "IT"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Imperia Gold",
+    "category": "Wood Finishes",
+    "subcategory": "Luxury Wood Finish",
+    "description": "High-shine clear and metallic wood coating highlighting grain structure with weather defense.",
+    "id": "berger-paints-39",
+    "initials": "IG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Imperia Grande",
+    "category": "Wood Finishes",
+    "subcategory": "Luxury Wood Finish",
+    "description": "Premium clear matt PU finish providing extreme water repellence and structural flexibility.",
+    "id": "berger-paints-40",
+    "initials": "IG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Imperia Grande Whites",
+    "category": "Wood Finishes",
+    "subcategory": "Luxury Wood Finish",
+    "description": "UV-resistant white matt PU coating designed for dual interior and exterior wood protection.",
+    "id": "berger-paints-41",
+    "initials": "IG"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Imperia Polyester",
+    "category": "Wood Finishes",
+    "subcategory": "Super Luxury Finish",
+    "description": "High-build 3-in-1 polyester system creating an ultra-smooth, mirror-like",
+    "id": "berger-paints-42",
+    "initials": "IP"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Wood Protektor",
+    "category": "Wood Finishes",
+    "subcategory": "Economy Wood Finish",
+    "description": "Multi-shade protective wood coating designed for straightforward application and restoration.",
+    "id": "berger-paints-43",
+    "initials": "WP"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Rainbow",
+    "category": "Wood Finishes",
+    "subcategory": "Classic Polish",
+    "description": "Crystal-clear wood polish available in matt and gloss sheens for interior furniture.",
+    "id": "berger-paints-44",
+    "initials": "R"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Dampstop Advanced",
+    "category": "Waterproofing",
+    "subcategory": "Penetrative Barrier",
+    "description": "Single-component penetrative chemical barrier blocking sub-surface wall dampness.",
+    "id": "berger-paints-45",
+    "initials": "HD"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Dampstop Duo",
+    "category": "Waterproofing",
+    "subcategory": "Waterproof Primer",
+    "description": "Nano-technology acrylic primer resisting up to 4 bar positive hydrostatic pressure.",
+    "id": "berger-paints-46",
+    "initials": "HD"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Dampstop Elasto",
+    "category": "Waterproofing",
+    "subcategory": "Elastomeric Barrier",
+    "description": "Fibre-reinforced liquid waterproofing coating capable of 160% structural elongation.",
+    "id": "berger-paints-47",
+    "initials": "HD"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Roof Kool & Seal",
+    "category": "Waterproofing",
+    "subcategory": "Roof Coating",
+    "description": "100% acrylic elastomeric heat-reflective roof coating that seals hairline concrete cracks.",
+    "id": "berger-paints-48",
+    "initials": "HR"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield PU Roofkoat",
+    "category": "Waterproofing",
+    "subcategory": "PU Membrane",
+    "description": "Single-component UV-resistant liquid polyurethane membrane with 350% crack bridging.",
+    "id": "berger-paints-49",
+    "initials": "HP"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield PU Elastoseal Non UV 1 K",
+    "category": "Waterproofing",
+    "subcategory": "Polyurethane Membrane",
+    "description": "Heavy-duty polyurethane waterproofing membrane formulated for covered or non-exposed slabs.",
+    "id": "berger-paints-50",
+    "initials": "HP"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Repairo",
+    "category": "Waterproofing",
+    "subcategory": "Polymer Modifier",
+    "description": "Specialized repair polymer used to modify cement mortar for structural crack filling.",
+    "id": "berger-paints-51",
+    "initials": "HR"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Advanced Latex Plus",
+    "category": "Waterproofing",
+    "subcategory": "SBR Latex Modifier",
+    "description": "Styrene-butadiene rubber latex additive for high-adhesion bonding coats and mortar repair.",
+    "id": "berger-paints-52",
+    "initials": "HA"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Power Plasticizer",
+    "category": "Waterproofing",
+    "subcategory": "Concrete Admixture",
+    "description": "High-performance plasticizing admixture designed to increase concrete density and strength.",
+    "id": "berger-paints-53",
+    "initials": "HP"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Proshield HM HDPE",
+    "category": "Waterproofing",
+    "subcategory": "Bituminous Membrane",
+    "description": "APP-modified bitumen membrane with high-density polyethylene protective surfacing.",
+    "id": "berger-paints-54",
+    "initials": "HP"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Wall Shield 2K",
+    "category": "Waterproofing",
+    "subcategory": "Polymer Coating",
+    "description": "Two-component acrylic polymer-modified cementitious coating for masonry sealing.",
+    "id": "berger-paints-55",
+    "initials": "HW"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Super Grout",
+    "category": "Waterproofing",
+    "subcategory": "Non-Shrink Grout",
+    "description": "Precision dry-cementitious non-shrink grout formulated for filling structural voids.",
+    "id": "berger-paints-56",
+    "initials": "HS"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield DampShield",
+    "category": "Waterproofing",
+    "subcategory": "Exterior Primer",
+    "description": "Water-based damp-blocking exterior primer engineered to prevent moisture intrusion.",
+    "id": "berger-paints-57",
+    "initials": "HD"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Tankshield PW",
+    "category": "Waterproofing",
+    "subcategory": "Cementitious Coating",
+    "description": "Two-component polymer-modified cementitious system certified safe for potable water tanks.",
+    "id": "berger-paints-58",
+    "initials": "HT"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Seal-o-Prime",
+    "category": "Waterproofing",
+    "subcategory": "Sealing Primer",
+    "description": "Triple-booster exterior primer resisting concrete alkalinity, efflorescence, and moisture.",
+    "id": "berger-paints-59",
+    "initials": "HS"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Waterproof Putty",
+    "category": "Waterproofing",
+    "subcategory": "Wall Putty",
+    "description": "White-cement-based hydrophobic wall putty exhibiting the \"Lotus Bead\" water-repellent effect.",
+    "id": "berger-paints-60",
+    "initials": "HW"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Block Bond",
+    "category": "Waterproofing",
+    "subcategory": "Masonry Mortar",
+    "description": "Specialized block joining mortar engineered for thin-bed AAC block construction.",
+    "id": "berger-paints-61",
+    "initials": "HB"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "HomeShield Alpast Super",
+    "category": "Waterproofing",
+    "subcategory": "Specialty Compound",
+    "description": "High-performance waterproofing additive engineered for civil and industrial structures.",
+    "id": "berger-paints-62",
+    "initials": "HA"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "BP Cement Primer (WT)",
+    "category": "Primers & Undercoats",
+    "subcategory": "Interior Primer",
+    "description": "100% acrylic-based water-thinnable primer providing strong topcoat adhesion.",
+    "id": "berger-paints-63",
+    "initials": "BC"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "BP Exterior Cement Primer",
+    "category": "Primers & Undercoats",
+    "subcategory": "Exterior Primer",
+    "description": "Acrylic primer designed to prepare exterior masonry surfaces for weather-resistant topcoats.",
+    "id": "berger-paints-64",
+    "initials": "BE"
+  },
+  {
+    "brand": "Berger Paints",
+    "name": "Bison Flex Putty",
+    "category": "Primers & Undercoats",
+    "subcategory": "Wall Putty",
+    "description": "White-cement putty formulated to yield a smooth, crack-free foundation for wall paint.",
+    "id": "berger-paints-65",
+    "initials": "BF"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Nilaya Arc Matt",
+    "category": "Interior Wall Paint",
+    "subcategory": "Super Luxury Lime Finish",
+    "description": "Mineral lime-based chemistry with an artisanal matt aesthetic",
+    "id": "asian-paints-66",
+    "initials": "NA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Nilaya Arc Pearlescent",
+    "category": "Interior Wall Paint",
+    "subcategory": "Super Luxury Lime Finish",
+    "description": "Lime-based formulation with subtle pearlescent optical depth",
+    "id": "asian-paints-67",
+    "initials": "NA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Glitz Reserv",
+    "category": "Interior Wall Paint",
+    "subcategory": "Super Luxury Emulsion",
+    "description": "Soft sheen crème finish with ultra-stain resistance",
+    "id": "asian-paints-68",
+    "initials": "RG"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Glitz Ultra Matt",
+    "category": "Interior Wall Paint",
+    "subcategory": "Super Luxury Emulsion",
+    "description": "Crack-free performance emulsion with complete matt clarity",
+    "id": "asian-paints-69",
+    "initials": "RG"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Matt",
+    "category": "Interior Wall Paint",
+    "subcategory": "Luxury Emulsion",
+    "description": "Soft, non-reflective velvety finish with Teflon protection",
+    "id": "asian-paints-70",
+    "initials": "RM"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Advanced",
+    "category": "Interior Wall Paint",
+    "subcategory": "Luxury Emulsion",
+    "description": "Enhanced surface smoothness and long-term color retention",
+    "id": "asian-paints-71",
+    "initials": "RA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Shyne Advanced",
+    "category": "Interior Wall Paint",
+    "subcategory": "Luxury Emulsion",
+    "description": "High-glow sheen finish engineered for high washability",
+    "id": "asian-paints-72",
+    "initials": "RS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Luxury Emulsion",
+    "category": "Interior Wall Paint",
+    "subcategory": "Luxury Emulsion",
+    "description": "Teflon Surface Protector with 8-year performance warranty",
+    "id": "asian-paints-73",
+    "initials": "RL"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Lustre",
+    "category": "Interior Wall Paint",
+    "subcategory": "Luxury Emulsion",
+    "description": "Non-yellowing dimpled lustre finish with high scrub resistance",
+    "id": "asian-paints-74",
+    "initials": "RL"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Aspira",
+    "category": "Interior Wall Paint",
+    "subcategory": "Super Luxury Emulsion",
+    "description": "Water Beading Technology offering elite washability",
+    "id": "asian-paints-75",
+    "initials": "RA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Health Shield Luxury Emulsion",
+    "category": "Interior Wall Paint",
+    "subcategory": "Health & Hygiene",
+    "description": "Silver Ion technology killing 99% of surface bacteria",
+    "id": "asian-paints-76",
+    "initials": "RH"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Health Shield Clear",
+    "category": "Interior Wall Paint",
+    "subcategory": "Health & Hygiene",
+    "description": "Water-based antibacterial clear protective topcoat",
+    "id": "asian-paints-77",
+    "initials": "RH"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apcolite All Protek Shyne",
+    "category": "Interior Wall Paint",
+    "subcategory": "Premium Emulsion",
+    "description": "Lotus Effect technology delivering high stain",
+    "id": "asian-paints-78",
+    "initials": "AA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apcolite All Protek Matt",
+    "category": "Interior Wall Paint",
+    "subcategory": "Premium Emulsion",
+    "description": "Lotus Effect hydrophobic stain barrier in a matt finish",
+    "id": "asian-paints-79",
+    "initials": "AA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apcolite Advanced Shyne Premium Emulsion",
+    "category": "Interior Wall Paint",
+    "subcategory": "Premium Emulsion",
+    "description": "Advanced Stain Guard formula with high-sheen reflection",
+    "id": "asian-paints-80",
+    "initials": "AA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apcolite Premium Satin Emulsion",
+    "category": "Interior Wall Paint",
+    "subcategory": "Premium Emulsion",
+    "description": "Smooth satin glow balancing durability with scrub resistance",
+    "id": "asian-paints-81",
+    "initials": "AP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apcolite Premium Emulsion",
+    "category": "Interior Wall Paint",
+    "subcategory": "Premium Emulsion",
+    "description": "Nano Block Technology blocking deep stain penetration",
+    "id": "asian-paints-82",
+    "initials": "AP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Tractor Emulsion Shyne",
+    "category": "Interior Wall Paint",
+    "subcategory": "Economy Emulsion",
+    "description": "Plastic paint finish with anti-fade technology and sheen",
+    "id": "asian-paints-83",
+    "initials": "TE"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Tractor Emulsion Advanced",
+    "category": "Interior Wall Paint",
+    "subcategory": "Economy Emulsion",
+    "description": "Affordable plastic paint finish with 4-year warranty",
+    "id": "asian-paints-84",
+    "initials": "TE"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Tractor Emulsion",
+    "category": "Interior Wall Paint",
+    "subcategory": "Economy Emulsion",
+    "description": "Lead-free matt emulsion offering 1.5x distemper coverage",
+    "id": "asian-paints-85",
+    "initials": "TE"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Tractor Sparc Ultra",
+    "category": "Interior Wall Paint",
+    "subcategory": "Economy Emulsion",
+    "description": "Value-for-money smooth interior wall emulsion",
+    "id": "asian-paints-86",
+    "initials": "TS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Tractor Sparc",
+    "category": "Interior Wall Paint",
+    "subcategory": "Economy Emulsion",
+    "description": "Low-material-consumpt ion economy upgrade from distempers",
+    "id": "asian-paints-87",
+    "initials": "TS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Tractor Aqualock",
+    "category": "Interior Wall Paint",
+    "subcategory": "Economy / Distemper",
+    "description": "Water-based distemper offering double water resistance",
+    "id": "asian-paints-88",
+    "initials": "TA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Tractor Uno Acrylic Distemper",
+    "category": "Interior Wall Paint",
+    "subcategory": "Economy / Distemper",
+    "description": "Water-based interior distemper for budget painting",
+    "id": "asian-paints-89",
+    "initials": "TU"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "NeoBharat Latex Interior Paint",
+    "category": "Interior Wall Paint",
+    "subcategory": "Economy / Latex",
+    "description": "Smooth latex technology delivering 3x distemper durability",
+    "id": "asian-paints-90",
+    "initials": "NL"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Utsav Synthetic",
+    "category": "Interior Wall Paint",
+    "subcategory": "Economy Paint",
+    "description": "Economical synthetic coating for interior walls",
+    "id": "asian-paints-91",
+    "initials": "US"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Ultima Protek Duralife",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Super Luxury Exterior",
+    "description": "Advanced PUD formula with 15-year performance warranty",
+    "id": "asian-paints-92",
+    "initials": "AU"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Ultima Protek",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Luxury Exterior",
+    "description": "Graphene-powered home lamination with 12-year warranty",
+    "id": "asian-paints-93",
+    "initials": "AU"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Ultima Protek Advanced",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Luxury Exterior",
+    "description": "Graphene barrier coating with fiber reinforcement",
+    "id": "asian-paints-94",
+    "initials": "AU"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Ultima Stretch",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Luxury Exterior",
+    "description": "Stretchable PU serum film covering 2mm hairline cracks",
+    "id": "asian-paints-95",
+    "initials": "AU"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Ultima",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Premium Exterior",
+    "description": "Silicone-additive exterior paint with 7-year warranty",
+    "id": "asian-paints-96",
+    "initials": "AU"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Ultima Metallics",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Premium Exterior",
+    "description": "Water-based metallic luxury finish for exterior accents",
+    "id": "asian-paints-97",
+    "initials": "AU"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ultima Allura Torino",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Specialty Exterior",
+    "description": "Designer Italian-inspired exterior textured finish",
+    "id": "asian-paints-98",
+    "initials": "UA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Dust Proof Ultraa",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Premium Exterior",
+    "description": "Advanced dust-repellent silicone emulsion system",
+    "id": "asian-paints-99",
+    "initials": "AD"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Shyne Dust Proof Advanced",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Premium Exterior",
+    "description": "Twin Power and Silicon Boost dust-repellent high-sheen paint",
+    "id": "asian-paints-100",
+    "initials": "AS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Shyne",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Premium Exterior",
+    "description": "High-sheen exterior paint with anti-algal nano block",
+    "id": "asian-paints-101",
+    "initials": "AS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Advanced Dust Proof",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Premium Exterior",
+    "description": "Silicon Boost formula delivering 10% higher coverage",
+    "id": "asian-paints-102",
+    "initials": "AA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Dust Proof",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Premium Exterior",
+    "description": "Water-based coating resisting atmospheric dust settlement",
+    "id": "asian-paints-103",
+    "initials": "AD"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Tile Guard",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Specialized Exterior",
+    "description": "Water-repellent coating for clay tiles, bricks, and roofs",
+    "id": "asian-paints-104",
+    "initials": "AT"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Tile Guard Clear Matt",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Specialized Exterior",
+    "description": "Transparent water-resistant matt barrier for roof tiles",
+    "id": "asian-paints-105",
+    "initials": "AT"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Floor Guard",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Specialized Exterior",
+    "description": "Abrasion-resistant coating for foot and vehicular traffic",
+    "id": "asian-paints-106",
+    "initials": "AF"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ace Exterior Emulsion",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Economy Exterior",
+    "description": "Water-based acrylic emulsion resisting chalking and flaking",
+    "id": "asian-paints-107",
+    "initials": "AE"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ace Advanced",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Economy Exterior",
+    "description": "Anti-fade UV-resistant exterior emulsion",
+    "id": "asian-paints-108",
+    "initials": "AA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ace Shyne",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Economy Exterior",
+    "description": "Weather-shielding",
+    "id": "asian-paints-109",
+    "initials": "AS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ace Shyne Advanced",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Economy Exterior",
+    "description": "Upgraded weather-resistant sheen coating for exterior walls",
+    "id": "asian-paints-110",
+    "initials": "AS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ace Power+",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Economy Exterior",
+    "description": "Water-resistant exterior paint for monsoon protection",
+    "id": "asian-paints-111",
+    "initials": "AP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ace Sparc Ultra",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Economy Exterior",
+    "description": "Cost-effective plastic paint finish for exterior masonry",
+    "id": "asian-paints-112",
+    "initials": "AS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ace Sparc Shyne",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Economy Exterior",
+    "description": "Affordable sheen exterior emulsion",
+    "id": "asian-paints-113",
+    "initials": "AS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ace Sparc",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Economy Exterior",
+    "description": "Acrylic binder emulsion with 2-year flaking warranty",
+    "id": "asian-paints-114",
+    "initials": "AS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ace Sparc Colours",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Economy Exterior",
+    "description": "Direct-application pre-tinted exterior economy paint",
+    "id": "asian-paints-115",
+    "initials": "AS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ace Sparc Advanced",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Economy Exterior",
+    "description": "Upgraded anti-chalking exterior economy formulation",
+    "id": "asian-paints-116",
+    "initials": "AS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Sparc Exterior Emulsion",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Economy Exterior",
+    "description": "Entry-level water-borne exterior paint for moderate climates",
+    "id": "asian-paints-117",
+    "initials": "SE"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ultima Protek Shyne",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Luxury Exterior",
+    "description": "High-sheen lamination exterior paint with 10-year warranty",
+    "id": "asian-paints-118",
+    "initials": "UP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Ultra Nonstick Premium Exterior",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Specialty Exterior",
+    "description": "Non-stick Dirt Pick Up Resistance (DPUR) technology",
+    "id": "asian-paints-119",
+    "initials": "UN"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Weather Proof Exterior",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Premium Exterior",
+    "description": "PU-modified weather-proof exterior emulsion",
+    "id": "asian-paints-120",
+    "initials": "AW"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Ultima Protek Suprema",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Commercial / B2B",
+    "description": "Graphene wall lamination for commercial structures",
+    "id": "asian-paints-121",
+    "initials": "AU"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Ultima Suprema Anti-Carbonation",
+    "category": "Exterior Wall Paint",
+    "subcategory": "Commercial / B2B",
+    "description": "Structural anti-carbonation shield against rebar corrosion",
+    "id": "asian-paints-122",
+    "initials": "AU"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Play Metallics",
+    "category": "Interior Wall Texture",
+    "subcategory": "Special Effects",
+    "description": "100% acrylic metallic special effect texture paint",
+    "id": "asian-paints-123",
+    "initials": "RP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Play Stucco",
+    "category": "Interior Wall Texture",
+    "subcategory": "Special Effects",
+    "description": "Plaster-based texture",
+    "id": "asian-paints-124",
+    "initials": "RP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Play Dune",
+    "category": "Interior Wall Texture",
+    "subcategory": "Special Effects",
+    "description": "Metallic sand-dune effect water-based texture",
+    "id": "asian-paints-125",
+    "initials": "RP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Play Safari",
+    "category": "Interior Wall Texture",
+    "subcategory": "Special Effects",
+    "description": "Earthy, desert-inspired special effect finish",
+    "id": "asian-paints-126",
+    "initials": "RP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Play Stucco Marble Finish",
+    "category": "Interior Wall Texture",
+    "subcategory": "Special Effects",
+    "description": "Polished marble effect plaster texture",
+    "id": "asian-paints-127",
+    "initials": "RP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Play Special Effects",
+    "category": "Interior Wall Texture",
+    "subcategory": "Special Effects",
+    "description": "Tooling textures including Crinkle, Weaving, and Canvas",
+    "id": "asian-paints-128",
+    "initials": "RP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Play Luxe Collection",
+    "category": "Interior Wall Texture",
+    "subcategory": "Italian / Super Luxury",
+    "description": "Features Mineral, Marmorino, Lithos, and Archi Concrete",
+    "id": "asian-paints-129",
+    "initials": "RP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Play Lux Imprints",
+    "category": "Interior Wall Texture",
+    "subcategory": "Super Luxury",
+    "description": "Includes Infinitex, Calcecruda, Opaco, and Dune lines",
+    "id": "asian-paints-130",
+    "initials": "RP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Play Midas",
+    "category": "Interior Wall Texture",
+    "subcategory": "Special Effects",
+    "description": "Metallic gold luxury special effect coating",
+    "id": "asian-paints-131",
+    "initials": "RP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Duracast",
+    "category": "Exterior Wall Texture",
+    "subcategory": "Textured Exterior",
+    "description": "Heavy-duty weather-resistant structural exterior textures",
+    "id": "asian-paints-132",
+    "initials": "AD"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apex Createx",
+    "category": "Exterior Wall Texture",
+    "subcategory": "Textured Exterior",
+    "description": "Patterned exterior texture finish for commercial facades",
+    "id": "asian-paints-133",
+    "initials": "AC"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Nilaya Designer Collection",
+    "category": "Wall Coverings",
+    "subcategory": "Designer Wallpaper",
+    "description": "Premium wallpaper ranges including Serenade and Earth Sign",
+    "id": "asian-paints-134",
+    "initials": "ND"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech Emporio PU",
+    "category": "Wood Finish",
+    "subcategory": "Italian Luxury PU",
+    "description": "Acrylic-based Italian PU with fast drying and high clarity",
+    "id": "asian-paints-135",
+    "initials": "WE"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech Emporio PU Palette",
+    "category": "Wood Finish",
+    "subcategory": "Italian Luxury PU",
+    "description": "7000+ tintable opaque and metallic luxury Italian shades",
+    "id": "asian-paints-136",
+    "initials": "WE"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech Polyester",
+    "category": "Wood Finish",
+    "subcategory": "Italian Polyester",
+    "description": "Engineered for timber and marble with mirror-like gloss depth",
+    "id": "asian-paints-137",
+    "initials": "WP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech Polyester Gold",
+    "category": "Wood Finish",
+    "subcategory": "Luxury Polyester",
+    "description": "Zero-maintenance, high-shine durable timber coating",
+    "id": "asian-paints-138",
+    "initials": "WP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech PU Palette",
+    "category": "Wood Finish",
+    "subcategory": "Premium PU",
+    "description": "Non-yellowing colored PU for interior and exterior wood/metal",
+    "id": "asian-paints-139",
+    "initials": "WP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech PU Interior",
+    "category": "Wood Finish",
+    "subcategory": "Polyurethane",
+    "description": "High scratch and stain resistance for high-use furniture",
+    "id": "asian-paints-140",
+    "initials": "WP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech PU Exterior",
+    "category": "Wood Finish",
+    "subcategory": "Polyurethane",
+    "description": "UV-resistant exterior timber protection preventing cracking",
+    "id": "asian-paints-141",
+    "initials": "WP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech Insignia Chrome",
+    "category": "Wood Finish",
+    "subcategory": "Special Effect",
+    "description": "Fine acrylic-based international chrome special effect",
+    "id": "asian-paints-142",
+    "initials": "WI"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech Insignia Metallic",
+    "category": "Wood Finish",
+    "subcategory": "Special Effect",
+    "description": "Fine acrylic-based international metallic designer series",
+    "id": "asian-paints-143",
+    "initials": "WI"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech Aquadur PU Interior Matt",
+    "category": "Wood Finish",
+    "subcategory": "Water-Based PU",
+    "description": "Eco-friendly, low-VOC, low-odour water-borne PU clear coat",
+    "id": "asian-paints-144",
+    "initials": "WA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech Melamyne",
+    "category": "Wood Finish",
+    "subcategory": "Melamine Resin",
+    "description": "Economical, smooth protective finish for interior furniture",
+    "id": "asian-paints-145",
+    "initials": "WM"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech Wood Stains",
+    "category": "Wood Finish",
+    "subcategory": "Wood Stain",
+    "description": "Penetrating stain enhancing natural",
+    "id": "asian-paints-146",
+    "initials": "WW"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "WoodTech Interior Varnish",
+    "category": "Wood Finish",
+    "subcategory": "Protective Varnish",
+    "description": "Transparent film highlighting timber aesthetics",
+    "id": "asian-paints-147",
+    "initials": "WI"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Touchwood",
+    "category": "Wood Finish",
+    "subcategory": "1-Pack Polyurethane",
+    "description": "User-friendly single-pack clear wood coating",
+    "id": "asian-paints-148",
+    "initials": "T"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apcolite Premium Gloss Enamel",
+    "category": "Enamel Paint",
+    "subcategory": "Synthetic Alkyd",
+    "description": "Tough oil-based film delivering a mirror-like high gloss",
+    "id": "asian-paints-149",
+    "initials": "AP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apcolite Premium Satin Enamel",
+    "category": "Enamel Paint",
+    "subcategory": "Satin Enamel",
+    "description": "Soft sheen, stain-resistant finish with anti-fungal shield",
+    "id": "asian-paints-150",
+    "initials": "AP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apcolite Advanced PU Enamel",
+    "category": "Enamel Paint",
+    "subcategory": "Polyurethane Enamel",
+    "description": "Non-yellowing, high-gloss weather-resistant metal/wood finish",
+    "id": "asian-paints-151",
+    "initials": "AA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apcolite Rustshield PU Enamel",
+    "category": "Enamel Paint",
+    "subcategory": "Anti-Rust PU",
+    "description": "Direct-to-metal anti-rust enamel with 4-year rust warranty",
+    "id": "asian-paints-152",
+    "initials": "AR"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apcolite Advanced 2-Pack Epoxy Finish",
+    "category": "Industrial / Enamel",
+    "subcategory": "Epoxy Finish",
+    "description": "Heavy-duty marine and industrial atmospheric corrosion shield",
+    "id": "asian-paints-153",
+    "initials": "AA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Tractor Enamel",
+    "category": "Enamel Paint",
+    "subcategory": "Economy Enamel",
+    "description": "Economical glossy enamel for wood, metal, and masonry",
+    "id": "asian-paints-154",
+    "initials": "TE"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Trucare Wall Putty",
+    "category": "Surface Preparation",
+    "subcategory": "White Cement Putty",
+    "description": "Smooth white leveling",
+    "id": "asian-paints-155",
+    "initials": "TW"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Trucare Acrylic Wall Putty",
+    "category": "Surface Preparation",
+    "subcategory": "Acrylic Paste Putty",
+    "description": "Water-based putty offering high adhesion and smoothness",
+    "id": "asian-paints-156",
+    "initials": "TA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Trucare 2X Primer Putty Mix",
+    "category": "Surface Preparation",
+    "subcategory": "Combined Undercoat",
+    "description": "Dual-action formulation combining primer and putty properties",
+    "id": "asian-paints-157",
+    "initials": "T2"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Trucare Filling Putty",
+    "category": "Surface Preparation",
+    "subcategory": "Specialty Filler",
+    "description": "Heavy-duty paste for filling deeper surface indentations",
+    "id": "asian-paints-158",
+    "initials": "TF"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Trucare Knifing Paste Filler",
+    "category": "Surface Preparation",
+    "subcategory": "Metal/Wood Filler",
+    "description": "Hard-drying filler for leveling metal and timber surfaces",
+    "id": "asian-paints-159",
+    "initials": "TK"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Royale Wall Base Coat",
+    "category": "Surface Preparation",
+    "subcategory": "Luxury Undercoat",
+    "description": "Premium base coat enhancing depth and coverage for Royale",
+    "id": "asian-paints-160",
+    "initials": "RW"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Waterproofing Putty",
+    "category": "Surface Preparation",
+    "subcategory": "Waterproof Putty",
+    "description": "White-cement putty modified with hydrophobic additives",
+    "id": "asian-paints-161",
+    "initials": "SW"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Trucare Sparc Interior Primer (Water)",
+    "category": "Primer",
+    "subcategory": "Interior Wall Primer",
+    "description": "Water-thinnable economic primer equalizing substrate suction",
+    "id": "asian-paints-162",
+    "initials": "TS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Trucare Interior Wall Primer (Water)",
+    "category": "Primer",
+    "subcategory": "Interior Wall Primer",
+    "description": "Standard acrylic water-borne primer for interior walls",
+    "id": "asian-paints-163",
+    "initials": "TI"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Trucare Interior Wall Primer (Solvent)",
+    "category": "Primer",
+    "subcategory": "Interior Wall Primer",
+    "description": "Solvent-thinnable primer for porous or chalking surfaces",
+    "id": "asian-paints-164",
+    "initials": "TI"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Decoprime Premium Interior Primer",
+    "category": "Primer",
+    "subcategory": "Interior Wall Primer",
+    "description": "Premium wall primer offering superior opacity and bond",
+    "id": "asian-paints-165",
+    "initials": "DP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Primero",
+    "category": "Primer",
+    "subcategory": "Exterior Wall Primer",
+    "description": "Exterior primer providing high hiding and alkali resistance",
+    "id": "asian-paints-166",
+    "initials": "SP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Trucare Exterior Wall Primer",
+    "category": "Primer",
+    "subcategory": "Exterior Wall Primer",
+    "description": "Weather-resistant undercoat for exterior topcoats",
+    "id": "asian-paints-167",
+    "initials": "TE"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Terrace Tile Primer",
+    "category": "Primer",
+    "subcategory": "Specialized Primer",
+    "description": "Adhesion-promoting primer for smooth tile surfaces on roofs",
+    "id": "asian-paints-168",
+    "initials": "ST"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Trucare Red Oxide Metal Primer",
+    "category": "Metal Primer",
+    "subcategory": "Anti-Rust Primer",
+    "description": "Classic corrosion-inhibiting primer for ferrous",
+    "id": "asian-paints-169",
+    "initials": "TR"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Trucare Yellow Metal Primer",
+    "category": "Metal Primer",
+    "subcategory": "Anti-Rust Primer",
+    "description": "Chrome-free primer providing high adhesion to alloys",
+    "id": "asian-paints-170",
+    "initials": "TY"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Trucare Grey 1-Pack Epoxy Primer",
+    "category": "Metal Primer",
+    "subcategory": "Epoxy Primer",
+    "description": "Ready-to-use anti-rust primer with 50x protection",
+    "id": "asian-paints-171",
+    "initials": "TG"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Apcolite Advanced 2-Pack Epoxy Primer",
+    "category": "Metal Primer",
+    "subcategory": "Industrial Epoxy",
+    "description": "Heavy-duty dual-pack primer doubling as an undercoat",
+    "id": "asian-paints-172",
+    "initials": "AA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare High Performance Red Oxide",
+    "category": "Metal Primer",
+    "subcategory": "Heavy-Duty Primer",
+    "description": "Ready-to-use direct metal coating with supreme anti-rusting",
+    "id": "asian-paints-173",
+    "initials": "SH"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Decoprime Premium Metal Primer",
+    "category": "Metal Primer",
+    "subcategory": "Metal Primer",
+    "description": "Economical anti-corrosive primer for residential ironwork",
+    "id": "asian-paints-174",
+    "initials": "DP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Utsav Metal Primer",
+    "category": "Metal Primer",
+    "subcategory": "Economy Primer",
+    "description": "Basic anti-corrosive metal undercoat with good opacity",
+    "id": "asian-paints-175",
+    "initials": "UM"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Damp Proof",
+    "category": "Waterproofing",
+    "subcategory": "Exterior / Roof",
+    "description": "Fiber-reinforced",
+    "id": "asian-paints-176",
+    "initials": "SD"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Damp Proof Ultra",
+    "category": "Waterproofing",
+    "subcategory": "Roof Membrane",
+    "description": "Premium liquid waterproofing membrane with 12-year warranty",
+    "id": "asian-paints-177",
+    "initials": "SD"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Damp Proof Xtreme",
+    "category": "Waterproofing",
+    "subcategory": "Heavy-Duty Roof",
+    "description": "Salt Shield technology fighting extreme saline conditions",
+    "id": "asian-paints-178",
+    "initials": "SD"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Damp Sheath Exterior Advanced",
+    "category": "Waterproofing",
+    "subcategory": "Exterior Vertical",
+    "description": "5-year warranty anti-dampness exterior wall coating",
+    "id": "asian-paints-179",
+    "initials": "SD"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Damp Sheath Interior",
+    "category": "Waterproofing",
+    "subcategory": "Interior Wall Coating",
+    "description": "3-year warranty preventive coating for mild interior dampness",
+    "id": "asian-paints-180",
+    "initials": "SD"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Damp Sheath Interior Advanced",
+    "category": "Waterproofing",
+    "subcategory": "Interior Wall Coating",
+    "description": "Upgraded anti-dampness interior membrane system",
+    "id": "asian-paints-181",
+    "initials": "SD"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Damp Block 2K",
+    "category": "Waterproofing",
+    "subcategory": "Polymer Mortar Slurry",
+    "description": "2-component coating for interior walls, bathrooms, & efflorescence",
+    "id": "asian-paints-182",
+    "initials": "SD"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Damp Block 2K Prime",
+    "category": "Waterproofing",
+    "subcategory": "Mortar Slurry",
+    "description": "Pre-treatment 2-component anti-efflorescence barrier",
+    "id": "asian-paints-183",
+    "initials": "SD"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Ultra Block 2K",
+    "category": "Waterproofing",
+    "subcategory": "Heavy-Duty Slurry",
+    "description": "High-elongation polymer coating for water-retaining structures",
+    "id": "asian-paints-184",
+    "initials": "SU"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Hydroloc Xtreme",
+    "category": "Waterproofing",
+    "subcategory": "Pre-Putty Waterproofing",
+    "description": "Direct-on-plaster anti-damp coating with 5-year warranty",
+    "id": "asian-paints-185",
+    "initials": "SH"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Epoxy TriBlock",
+    "category": "Waterproofing",
+    "subcategory": "Potable Tank Coating",
+    "description": "Food-grade FDA certified 3-component epoxy for water tanks",
+    "id": "asian-paints-186",
+    "initials": "SE"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Infinia",
+    "category": "Waterproofing",
+    "subcategory": "Structural Membrane",
+    "description": "Ultra-premium structural coating offering up to 25-year warranty",
+    "id": "asian-paints-187",
+    "initials": "SI"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Crack Seal",
+    "category": "Construction Chemical",
+    "subcategory": "Crack Filler",
+    "description": "Ready-to-use paste for filling structural cracks up to 5mm",
+    "id": "asian-paints-188",
+    "initials": "SC"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Textured Crack Filler",
+    "category": "Construction Chemical",
+    "subcategory": "Crack Filler",
+    "description": "Grainy texture crack filler matching exterior",
+    "id": "asian-paints-189",
+    "initials": "ST"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare AkrylMax",
+    "category": "Construction Chemical",
+    "subcategory": "Acrylic Sealant",
+    "description": "Paintable acrylic sealant for window and door frame joints",
+    "id": "asian-paints-190",
+    "initials": "SA"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Xtremoseal",
+    "category": "Construction Chemical",
+    "subcategory": "Joint Sealant",
+    "description": "High-performance sealant for sewage and sanitary joint gaps",
+    "id": "asian-paints-191",
+    "initials": "SX"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Repair Polymer",
+    "category": "Construction Chemical",
+    "subcategory": "Bonding Agent",
+    "description": "High-strength bonding agent for concrete repair and modification",
+    "id": "asian-paints-192",
+    "initials": "SR"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare RepairMax 200",
+    "category": "Construction Chemical",
+    "subcategory": "Structural Repair",
+    "description": "Shrinkage-compensate d micro-concrete structural repair mortar",
+    "id": "asian-paints-193",
+    "initials": "SR"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare CemBoost 200",
+    "category": "Construction Chemical",
+    "subcategory": "Mortar Admixture",
+    "description": "Water impermeability liquid additive for cement mixes",
+    "id": "asian-paints-194",
+    "initials": "SC"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Vitalia Neo",
+    "category": "Construction Chemical",
+    "subcategory": "Integral Waterproofing",
+    "description": "Integral waterproofing liquid for plaster and concrete mixes",
+    "id": "asian-paints-195",
+    "initials": "SV"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Block Joining Mortar",
+    "category": "Construction Chemical",
+    "subcategory": "Structural Adhesive",
+    "description": "Self-curing thin-bed mortar for AAC block masonry",
+    "id": "asian-paints-196",
+    "initials": "SB"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Roof Tapes",
+    "category": "Waterproofing",
+    "subcategory": "Sealing Tape",
+    "description": "Self-adhesive tape for roof joint and flashing seal",
+    "id": "asian-paints-197",
+    "initials": "SR"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Tile Coat",
+    "category": "Waterproofing",
+    "subcategory": "Tile Coating",
+    "description": "Clear protective coat preventing water seepage through tiles",
+    "id": "asian-paints-198",
+    "initials": "ST"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Tile Adhesive (Normal)",
+    "category": "Tile Installation",
+    "subcategory": "Polymer Tile Adhesive",
+    "description": "Polymer-modified adhesive for fixing interior floor tiles",
+    "id": "asian-paints-199",
+    "initials": "ST"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Tile Adhesive (Tile-on-Tile)",
+    "category": "Tile Installation",
+    "subcategory": "Specialized Adhesive",
+    "description": "High-grab adhesive for laying new tiles over existing flooring",
+    "id": "asian-paints-200",
+    "initials": "ST"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Ezy White Tile Adhesive",
+    "category": "Tile Installation",
+    "subcategory": "White Tile Adhesive",
+    "description": "Polymer-modified white cement adhesive for glass and marble",
+    "id": "asian-paints-201",
+    "initials": "SE"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare White Multipurpose Tile",
+    "category": "Tile Installation",
+    "subcategory": "Premium Tile Adhesive",
+    "description": "Multipurpose white adhesive for stone and heavy tile formats",
+    "id": "asian-paints-202",
+    "initials": "SW"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Stone Tile Adhesive",
+    "category": "Tile Installation",
+    "subcategory": "Heavy-Duty Adhesive",
+    "description": "High-strength adhesive for granite, marble, and natural stone",
+    "id": "asian-paints-203",
+    "initials": "SS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "SmartCare Tile Grout - Epoxy 3K",
+    "category": "Tile Installation",
+    "subcategory": "Epoxy Joint Filler",
+    "description": "3-part water-resistant, chemical-proof",
+    "id": "asian-paints-204",
+    "initials": "ST"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "TruGrip Ultra",
+    "category": "Wood Adhesive",
+    "subcategory": "Synthetic Resin (PVA)",
+    "description": "Water-based waterproof wood adhesive for plywood/laminates",
+    "id": "asian-paints-205",
+    "initials": "TU"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "TruGrip Xtreme",
+    "category": "Contact Adhesive",
+    "subcategory": "Synthetic Rubber",
+    "description": "Toluene-free, benzene-free contact adhesive for PVC/laminates",
+    "id": "asian-paints-206",
+    "initials": "TX"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "TruGrip CR-8",
+    "category": "General Glue",
+    "subcategory": "Craft Glue",
+    "description": "General purpose water-soluble glue with non-drying orb design",
+    "id": "asian-paints-207",
+    "initials": "TC"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "TruGrip Masking Tapes",
+    "category": "Tape & Accessories",
+    "subcategory": "Painter Tape",
+    "description": "Precision masking tape preventing paint seepage",
+    "id": "asian-paints-208",
+    "initials": "TM"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "TruGrip Super Masking Tapes",
+    "category": "Tape & Accessories",
+    "subcategory": "Heavy-Duty Tape",
+    "description": "High-tack tape designed for wood clamping and masking",
+    "id": "asian-paints-209",
+    "initials": "TS"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Loctite Quick",
+    "category": "Instant Fixative",
+    "subcategory": "Cyanoacrylate",
+    "description": "Ultra-high viscosity instant adhesive with 5-10s repositioning",
+    "id": "asian-paints-210",
+    "initials": "LQ"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Loctite Rapid",
+    "category": "Fast Epoxy",
+    "subcategory": "Two-Pack Epoxy",
+    "description": "High-strength clear epoxy bonding",
+    "id": "asian-paints-211",
+    "initials": "LR"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Loctite Tough",
+    "category": "Structural Epoxy",
+    "subcategory": "Two-Pack Epoxy",
+    "description": "Low water-absorption epoxy for heavy metal/stone/wood joints",
+    "id": "asian-paints-212",
+    "initials": "LT"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "Loctite Tough X",
+    "category": "Structural Epoxy",
+    "subcategory": "Two-Pack Epoxy",
+    "description": "Extended pot life epoxy providing 2x bonding strength",
+    "id": "asian-paints-213",
+    "initials": "LT"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "FlexEasy",
+    "category": "Multi-Substrate Adhesive",
+    "subcategory": "Cyanoacrylate",
+    "description": "Rapid-bonding instant fixative setting in 5–30 seconds",
+    "id": "asian-paints-214",
+    "initials": "F"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "TruCare Paint Rollers",
+    "category": "Application Tool",
+    "subcategory": "Paint Roller",
+    "description": "Premium felt roller delivering high-speed, smooth coverage",
+    "id": "asian-paints-215",
+    "initials": "TP"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "AP TruCare Brush 740",
+    "category": "Application Tool",
+    "subcategory": "Paint Brush",
+    "description": "Durable synthetic/bristle brush ensuring precise cut-in edges",
+    "id": "asian-paints-216",
+    "initials": "AT"
+  },
+  {
+    "brand": "Asian Paints",
+    "name": "TruCare Masking Roll",
+    "category": "Application Tool",
+    "subcategory": "Protection Film",
+    "description": "Surface protection film with integrated self-adhesive tape",
+    "id": "asian-paints-217",
+    "initials": "TM"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "One Pure Elegance",
+    "category": "One (Luxury)",
+    "subcategory": "Interior Wall Paint",
+    "description": "Germ-protection luxury emulsion delivering high opacity and low VOC",
+    "id": "birla-opus-218",
+    "initials": "OP"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "One True Look",
+    "category": "One (Luxury)",
+    "subcategory": "Exterior Wall Paint",
+    "description": "High-durability exterior coating with anti-algae,",
+    "id": "birla-opus-219",
+    "initials": "OT"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "One Textures",
+    "category": "One (Luxury)",
+    "subcategory": "Designer Finish / Texture",
+    "description": "Special effect finishes including Bamboo, Tree Bark, Onyx Marble, and Sandstone",
+    "id": "birla-opus-220",
+    "initials": "OT"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "One Pro Smooth Primer",
+    "category": "One (Luxury)",
+    "subcategory": "Wall Primer & Undercoat",
+    "description": "High-adhesion base primer engineered for maximum topcoat color holdout",
+    "id": "birla-opus-221",
+    "initials": "OP"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "One Pro Smooth Putty",
+    "category": "One (Luxury)",
+    "subcategory": "Wall Putty",
+    "description": "High-finesse wall leveling compound creating an ultra-smooth surface",
+    "id": "birla-opus-222",
+    "initials": "OP"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Calista Ever Stay",
+    "category": "Calista (Premium)",
+    "subcategory": "Interior Wall Paint",
+    "description": "Premium interior emulsion engineered with anti-peel technology",
+    "id": "birla-opus-223",
+    "initials": "CE"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Calista Ever Clear",
+    "category": "Calista (Premium)",
+    "subcategory": "Interior Wall Paint",
+    "description": "Water-repellent and stain-resistant interior paint offering high washability",
+    "id": "birla-opus-224",
+    "initials": "CE"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Calista Ever Clear Matt",
+    "category": "Calista (Premium)",
+    "subcategory": "Interior Wall Paint",
+    "description": "Low-glare, stain-resistant interior emulsion for contemporary interiors",
+    "id": "birla-opus-225",
+    "initials": "CE"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Calista Ever Wash Shine",
+    "category": "Calista (Premium)",
+    "subcategory": "Interior Wall Paint",
+    "description": "High-sheen washable paint designed for high-traffic interior spaces",
+    "id": "birla-opus-226",
+    "initials": "CE"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Calista Neo Star",
+    "category": "Calista (Premium)",
+    "subcategory": "Exterior Wall Paint",
+    "description": "Weather-shield exterior emulsion with dust-resistant properties",
+    "id": "birla-opus-227",
+    "initials": "CN"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Calista Neo Star Shine",
+    "category": "Calista (Premium)",
+    "subcategory": "Exterior Wall Paint",
+    "description": "High-sheen exterior paint featuring solar reflectance and anti-carbonation protection",
+    "id": "birla-opus-228",
+    "initials": "CN"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Calista Pro White Primer",
+    "category": "Calista (Premium)",
+    "subcategory": "Wall Primer & Undercoat",
+    "description": "High-whiteness masonry primer ensuring uniform topcoat absorption",
+    "id": "birla-opus-229",
+    "initials": "CP"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Calista Perfect Choice Primer",
+    "category": "Calista (Premium)",
+    "subcategory": "Wall Primer & Undercoat",
+    "description": "Exterior masonry primer formulated for",
+    "id": "birla-opus-230",
+    "initials": "CP"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Calista Sparkle Gloss",
+    "category": "Calista (Premium)",
+    "subcategory": "Synthetic Enamel Paint",
+    "description": "High-coverage synthetic enamel for interior and exterior metal and wood",
+    "id": "birla-opus-231",
+    "initials": "CS"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Calista Sparkle PU",
+    "category": "Calista (Premium)",
+    "subcategory": "Polyurethane Enamel",
+    "description": "PU-modified enamel offering scratch and chemical resistance with a 3-year warranty",
+    "id": "birla-opus-232",
+    "initials": "CS"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Calista Sparkle Red Oxide Primer",
+    "category": "Calista (Premium)",
+    "subcategory": "Metal Primer",
+    "description": "Anti-corrosive protective undercoat for interior and exterior iron and steel",
+    "id": "birla-opus-233",
+    "initials": "CS"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Style Color Smart",
+    "category": "Style (Economy)",
+    "subcategory": "Interior Wall Paint",
+    "description": "Value interior emulsion providing enhanced coverage and a durable finish",
+    "id": "birla-opus-234",
+    "initials": "SC"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Style Super Bright",
+    "category": "Style (Economy)",
+    "subcategory": "Interior Acrylic Distemper",
+    "description": "Water-based distemper formulated for whiteness, brightness, and coverage",
+    "id": "birla-opus-235",
+    "initials": "SS"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Style Power Bright",
+    "category": "Style (Economy)",
+    "subcategory": "Exterior Wall Paint",
+    "description": "Entry-level exterior emulsion delivering extra shine and dust resistance",
+    "id": "birla-opus-236",
+    "initials": "SP"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Style Power Fit",
+    "category": "Style (Economy)",
+    "subcategory": "Exterior Wall Paint",
+    "description": "Economical exterior paint engineered for basic weather protection",
+    "id": "birla-opus-237",
+    "initials": "SP"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Style Pro Hide Primer",
+    "category": "Style (Economy)",
+    "subcategory": "Wall Primer & Undercoat",
+    "description": "Economy undercoat primer formulated with high hiding power to mask masonry flaws",
+    "id": "birla-opus-238",
+    "initials": "SP"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Style Perfect Start Primer",
+    "category": "Style (Economy)",
+    "subcategory": "Wall Primer & Undercoat",
+    "description": "General-purpose economic masonry primer for initial surface preparation",
+    "id": "birla-opus-239",
+    "initials": "SP"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Style Pro Fresh",
+    "category": "Style (Economy)",
+    "subcategory": "Wall Primer & Undercoat",
+    "description": "Economic preparatory wall coat designed for rapid re-painting cycles",
+    "id": "birla-opus-240",
+    "initials": "SP"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Alldry Wall Fix 4",
+    "category": "Alldry (Waterproofing)",
+    "subcategory": "Waterproofing Primer",
+    "description": "Crack-proof waterproofing barrier primer for internal and external walls",
+    "id": "birla-opus-241",
+    "initials": "AW"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Alldry Wall n Roof 10",
+    "category": "Alldry (Waterproofing)",
+    "subcategory": "Waterproof Membrane",
+    "description": "Elastomeric waterproof coating providing protection for walls and roofs",
+    "id": "birla-opus-242",
+    "initials": "AW"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Alldry Wall n Roof 12",
+    "category": "Alldry (Waterproofing)",
+    "subcategory": "Waterproof Membrane",
+    "description": "High-grade elastomeric waterproofing membrane with extended durability",
+    "id": "birla-opus-243",
+    "initials": "AW"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Alldry Wall n Roof 14",
+    "category": "Alldry (Waterproofing)",
+    "subcategory": "Waterproof Membrane",
+    "description": "Heavy-duty roof and exterior wall waterproofing system",
+    "id": "birla-opus-244",
+    "initials": "AW"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Alldry Salt Seal",
+    "category": "Alldry (Waterproofing)",
+    "subcategory": "Anti-Efflorescence Sealer",
+    "description": "Specialized treatment compound blocking salt leaching and capillary dampness",
+    "id": "birla-opus-245",
+    "initials": "AS"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Alldry Total 2k",
+    "category": "Alldry (Waterproofing)",
+    "subcategory": "Cementitious Slurry",
+    "description": "Two-component polymer-modified slurry coat for positive and negative moisture pressure",
+    "id": "birla-opus-246",
+    "initials": "AT"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Alldry Crack Master",
+    "category": "Alldry (Waterproofing)",
+    "subcategory": "Crack Repair Paste",
+    "description": "Flexible compound engineered for bridging exterior masonry hairline cracks",
+    "id": "birla-opus-247",
+    "initials": "AC"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Allwood PU Interior",
+    "category": "Allwood (Wood Finishes)",
+    "subcategory": "Interior Wood Coating",
+    "description": "High-performance polyurethane finish safeguarding indoor furniture and joinery",
+    "id": "birla-opus-248",
+    "initials": "AP"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Allwood PU Exterior",
+    "category": "Allwood (Wood Finishes)",
+    "subcategory": "Exterior Wood Coating",
+    "description": "Weather-resistant exterior polyurethane clear coat with UV filters",
+    "id": "birla-opus-249",
+    "initials": "AP"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Allwood Melamine",
+    "category": "Allwood (Wood Finishes)",
+    "subcategory": "Wood Finish / Polish",
+    "description": "Dual-pack hard wood coating providing heat, alcohol, and scratch resistance",
+    "id": "birla-opus-250",
+    "initials": "AM"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Allwood SoftTouch",
+    "category": "Allwood (Wood Finishes)",
+    "subcategory": "Wood Finish",
+    "description": "Tactile soft-matt finish designed for modern interior furniture",
+    "id": "birla-opus-251",
+    "initials": "AS"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Allwood Italian PU",
+    "category": "Allwood (Wood Finishes)",
+    "subcategory": "Luxury Wood Coating",
+    "description": "Premium Italian polyurethane system delivering clarity, depth, and yellowing resistance",
+    "id": "birla-opus-252",
+    "initials": "AI"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Allwood Excel One Thinner",
+    "category": "Allwood (Ancillaries)",
+    "subcategory": "Wood Coating Thinner",
+    "description": "Formulated solvent blend for diluting wood coatings and cleaning application equipment",
+    "id": "birla-opus-253",
+    "initials": "AE"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Allwood Excel One Smooth Thinner",
+    "category": "Allwood (Ancillaries)",
+    "subcategory": "Precision Spray Thinner",
+    "description": "Precision solvent optimized for extra flow and leveling in spray applications",
+    "id": "birla-opus-254",
+    "initials": "AE"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "One Aero",
+    "category": "Aerosols",
+    "subcategory": "Aerosol Spray Paint",
+    "description": "Quick-drying aerosol spray paint for touch-ups and DIY finishes",
+    "id": "birla-opus-255",
+    "initials": "OA"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Interior Foam Roller",
+    "category": "Opus Tools",
+    "subcategory": "Application Hardware",
+    "description": "High-density foam roller designed to yield a smooth emulsion topcoat finish",
+    "id": "birla-opus-256",
+    "initials": "IF"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Cloud Roller",
+    "category": "Opus Tools",
+    "subcategory": "Application Hardware",
+    "description": "Specialized designer pattern roller for applying structured wall textures",
+    "id": "birla-opus-257",
+    "initials": "CR"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Colour Swatch",
+    "category": "Colour Tools",
+    "subcategory": "Shade Selection System",
+    "description": "Peel-and-stick colour sample swatches for on-site visual evaluation",
+    "id": "birla-opus-258",
+    "initials": "CS"
+  },
+  {
+    "brand": "Birla Opus",
+    "name": "Colour Craft",
+    "category": "Colour Tools",
+    "subcategory": "Shade Selection System",
+    "description": "Fan deck and colour palette selection system for design professionals",
+    "id": "birla-opus-259",
+    "initials": "CC"
+  }
+]
