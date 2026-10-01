@@ -1647,8 +1647,10 @@ button { cursor: pointer; border: none; outline: none; }
   text-align: left;
 }
 
+
 /* =====================================================================
-   CROSS-PLATFORM & RESPONSIVE LAYOUT (Windows, macOS, iOS, Android, Tablets)
+   CROSS-PLATFORM & RESPONSIVE LAYOUT
+   Windows · macOS · iOS · Android · Tablets · Mobile Phones
    ===================================================================== */
 html, body {
   min-height: 100vh;
@@ -1657,24 +1659,71 @@ html, body {
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
 }
+/* Windows/Mac custom scrollbar */
+::-webkit-scrollbar { width: 7px; height: 7px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
 
-/* Custom smooth scrollbars for Windows & Mac */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+/* Mobile bottom navigation bar */
+.mobile-bottom-nav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid var(--border);
+  padding: 8px 0 env(safe-area-inset-bottom, 8px);
+  display: none;
+  justify-content: space-around;
+  align-items: stretch;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.08);
 }
-::-webkit-scrollbar-track {
-  background: #f1f5f9;
+.mobile-nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 6px 12px;
+  background: none;
+  border: none;
+  color: var(--ink-muted);
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: all 0.15s;
+  min-width: 60px;
+  min-height: 48px;
 }
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
+.mobile-nav-btn svg { width: 22px; height: 22px; }
+.mobile-nav-btn.active { color: var(--primary); }
+.mobile-nav-btn.active svg { stroke: var(--primary); }
+.mobile-fab {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal-dark), var(--teal-darker));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(34,73,87,0.35);
+  font-size: 24px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s;
+  margin-top: -10px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
+.mobile-fab:active { transform: scale(0.93); }
 
-/* Auth Gate Responsive Layout */
+/* Auth Gate Responsive */
 #authScreen {
   min-height: 100vh;
   min-height: 100dvh;
@@ -1682,6 +1731,7 @@ html, body {
   padding: 16px;
 }
 
+/* -------- Tablet: 1024px -------- */
 @media (max-width: 1024px) {
   .topbar {
     padding: 0 16px;
@@ -1692,79 +1742,112 @@ html, body {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .search-pill {
-    width: 180px;
-  }
+  .search-pill { width: 180px; }
   .top-nav {
     overflow-x: auto;
     max-width: 100%;
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
+    scrollbar-width: none;
   }
+  .top-nav::-webkit-scrollbar { display: none; }
+  .main-wrapper { padding: 20px 20px 80px; }
+  .dash-grid { grid-template-columns: 1fr; }
+  .analytics-hero-grid { grid-template-columns: 1fr 1fr; }
+  .lower-analytics-grid { grid-template-columns: 1fr; }
 }
 
+/* -------- Mobile: 768px -------- */
 @media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
+  body { font-size: 14px; }
+
+  /* Hide desktop topbar nav & search, show mobile bottom nav */
+  .top-nav { display: none !important; }
+  .search-pill { display: none !important; }
+  .btn-new-quote { display: none !important; }
+  .mobile-bottom-nav { display: flex !important; }
+
+  /* Compact topbar for mobile */
   .topbar {
     justify-content: space-between;
     padding: 10px 14px;
+    flex-wrap: nowrap;
+    height: 60px;
+    min-height: 60px;
   }
-  .brand-text small {
-    display: none;
+  .brand-text small { display: none; }
+  .brand-text h1 { font-size: 16px; }
+  .brand-logo-icon { width: 36px; height: 36px; font-size: 15px; border-radius: 10px; }
+  .user-info { display: none; }
+  .user-profile { padding-left: 6px; border-left: none; }
+  .user-avatar { width: 34px; height: 34px; font-size: 13px; }
+
+  /* Content area with bottom nav padding */
+  .main-wrapper {
+    padding: 16px 14px 100px;
   }
-  .top-nav {
-    order: 3;
-    width: 100%;
-    margin-top: 4px;
-    justify-content: flex-start;
-  }
-  .nav-pill {
-    padding: 8px 14px;
-    font-size: 12px;
-    flex-shrink: 0;
-  }
-  .search-pill {
-    width: 140px;
-  }
-  .auth-card {
-    max-width: 95vw;
-    padding: 28px 20px;
-    border-radius: 20px;
-  }
-  .auth-title {
-    font-size: 20px;
-  }
-  /* Prevent auto-zoom on iOS Safari when focusing inputs */
+  .app-layout { min-height: 100dvh; }
+
+  /* Responsive grids */
+  .dash-grid { grid-template-columns: 1fr; gap: 14px; }
+  .analytics-hero-grid { grid-template-columns: 1fr; gap: 12px; }
+  .lower-analytics-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  /* Cards padding */
+  .greeting-card { flex-direction: column; align-items: flex-start; padding: 18px 16px; gap: 12px; }
+  .greeting-content h2 { font-size: 20px; }
+  .card-panel { padding: 16px 14px; }
+  .dot-matrix-card { padding: 16px 14px; }
+  .salary-takehome-card { padding: 16px 14px; }
+  .ratio-card-dark, .ratio-card-light { padding: 14px 14px; }
+
+  /* Auth card */
+  .auth-card { max-width: 98vw; padding: 28px 18px; border-radius: 20px; }
+  .auth-title { font-size: 20px; }
+
+  /* Quotation / table overflow */
+  .qcard-body { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { min-width: 540px; }
+
+  /* Prevent iOS Safari auto-zoom on inputs */
   input[type="email"],
   input[type="password"],
   input[type="text"],
-  select,
-  textarea {
-    font-size: 16px !important;
-  }
-  .auth-btn-submit {
-    min-height: 48px;
-    font-size: 16px;
-  }
+  input[type="number"],
+  input[type="tel"],
+  select, textarea { font-size: 16px !important; }
+
+  /* Touch-friendly tap targets */
+  .auth-btn-submit { min-height: 50px; font-size: 16px; border-radius: 14px; }
+  button { min-height: 40px; }
+
+  /* Greeting actions stack on mobile */
+  .greeting-actions { flex-wrap: wrap; gap: 8px; }
+  .btn-pill-light, .btn-pill-green { height: 38px; font-size: 12px; }
+
+  /* Dot grid shrink */
+  .dot-grid { grid-template-columns: repeat(10, 1fr); gap: 6px; }
+  .grid-dot { width: 7px; height: 7px; }
 }
 
+/* -------- Small phones: 480px -------- */
 @media (max-width: 480px) {
-  .top-actions {
-    gap: 8px;
+  .topbar { padding: 8px 12px; }
+  .main-wrapper { padding: 12px 10px 96px; }
+  .auth-card { padding: 22px 14px; margin: 0; }
+  .auth-security-pill { font-size: 10px; padding: 3px 8px; }
+  .auth-title { font-size: 18px; }
+  .greeting-content h2 { font-size: 17px; }
+  .mobile-nav-btn { min-width: 48px; padding: 6px 6px; font-size: 9.5px; }
+  .mobile-fab { width: 48px; height: 48px; font-size: 20px; }
+}
+
+/* -------- Safe area for notch phones (iPhone X+) -------- */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .mobile-bottom-nav {
+    padding-bottom: calc(8px + env(safe-area-inset-bottom));
   }
-  .search-pill {
-    display: none;
-  }
-  .auth-card {
-    padding: 24px 16px;
-    margin: 8px;
-  }
-  .auth-security-pill {
-    font-size: 10.5px;
-    padding: 3px 8px;
-  }
+  .main-wrapper { padding-bottom: calc(100px + env(safe-area-inset-bottom)); }
 }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -1772,7 +1855,7 @@ html, body {
 <body>
 
 <!-- Official Security Login Gate -->
-<div id="authScreen" style="display:flex">
+<div id="authScreen" style="display:none">
   <div class="auth-card">
     <div class="auth-logo-badge">WCE</div>
     <h2 class="auth-title">WallCare <span>Experts</span></h2>
@@ -3613,14 +3696,20 @@ function getStoredAuth() {
 async function checkAuthGate() {
   const authScreen = document.getElementById('authScreen');
   const appLayout = document.getElementById('appLayout');
+  const mobileNav = document.getElementById('mobileBottomNav');
+
+  function showApp(email) {
+    if (authScreen) authScreen.style.display = 'none';
+    if (appLayout) appLayout.style.display = 'flex';
+    if (mobileNav && window.innerWidth <= 768) mobileNav.style.display = 'flex';
+    updateNavbarUser(email);
+    renderApp();
+  }
 
   // Check stored active session first
   const stored = getStoredAuth();
   if (stored && stored.email) {
-    if (authScreen) authScreen.style.display = 'none';
-    if (appLayout) appLayout.style.display = 'flex';
-    updateNavbarUser(stored.email);
-    renderApp();
+    showApp(stored.email);
     return;
   }
 
@@ -3632,10 +3721,7 @@ async function checkAuthGate() {
         const userObj = { email: session.user.email, id: session.user.id };
         sessionStorage.setItem('wallcare_auth_user', JSON.stringify(userObj));
         localStorage.setItem('wallcare_auth_user', JSON.stringify(userObj));
-        if (authScreen) authScreen.style.display = 'none';
-        if (appLayout) appLayout.style.display = 'flex';
-        updateNavbarUser(userObj.email);
-        renderApp();
+        showApp(userObj.email);
         return;
       }
     } catch(e) {
@@ -3645,6 +3731,7 @@ async function checkAuthGate() {
 
   // Not authenticated: Lock workspace and reveal official login screen
   if (appLayout) appLayout.style.display = 'none';
+  if (mobileNav) mobileNav.style.display = 'none';
   if (authScreen) authScreen.style.display = 'flex';
 }
 
@@ -3712,8 +3799,12 @@ async function handleOfficialLogin(e) {
     sessionStorage.setItem('wallcare_auth_user', JSON.stringify(userObj));
     localStorage.setItem('wallcare_auth_user', JSON.stringify(userObj));
 
-    document.getElementById('authScreen').style.display = 'none';
-    document.getElementById('appLayout').style.display = 'flex';
+    const _as = document.getElementById('authScreen');
+    const _al = document.getElementById('appLayout');
+    const _mn = document.getElementById('mobileBottomNav');
+    if (_as) _as.style.display = 'none';
+    if (_al) _al.style.display = 'flex';
+    if (_mn && window.innerWidth <= 768) _mn.style.display = 'flex';
     updateNavbarUser(userEmail);
     renderApp();
     toast('✓ Signed in as ' + userEmail);
@@ -3739,7 +3830,9 @@ function handleSignOut() {
 
   const appLayout = document.getElementById('appLayout');
   const authScreen = document.getElementById('authScreen');
+  const mobileNav = document.getElementById('mobileBottomNav');
   if (appLayout) appLayout.style.display = 'none';
+  if (mobileNav) mobileNav.style.display = 'none';
   if (authScreen) authScreen.style.display = 'flex';
 
   const passInput = document.getElementById('authPassword');
@@ -3758,6 +3851,69 @@ function updateNavbarUser(email) {
 
 // Initial Boot Guard
 checkAuthGate();
+
+// Sync mobile bottom nav active tab with current view
+function syncMobileNav(view) {
+  document.querySelectorAll('.mobile-nav-btn').forEach(function(btn) {
+    btn.classList.toggle('active', btn.dataset.tab === view);
+  });
+}
+// Patch setView to also sync mobile nav
+const _origSetView = typeof setView === 'function' ? setView : function(){};
+</script>
+
+<!-- Mobile Bottom Navigation Bar (visible only on ≤768px) -->
+<nav class="mobile-bottom-nav" id="mobileBottomNav" style="display:none">
+  <button class="mobile-nav-btn active" data-tab="dashboard" onclick="setView('dashboard')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    Home
+  </button>
+  <button class="mobile-nav-btn" data-tab="quotes" onclick="setView('quotes')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+    Quotes
+  </button>
+  <button class="mobile-fab" onclick="startNewQuote();setView('quotes');" title="New Quote">＋</button>
+  <button class="mobile-nav-btn" data-tab="catalog" onclick="setView('catalog')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+    Catalog
+  </button>
+  <button class="mobile-nav-btn" data-tab="pricing" onclick="setView('pricing')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+    Prices
+  </button>
+</nav>
+
+<script>
+// Show mobile bottom nav after auth and sync nav tab
+(function() {
+  var origCheckAuth = window.checkAuthGate;
+  // Show/hide mobile nav based on screen and auth state
+  function showMobileNavIfNeeded() {
+    var nav = document.getElementById('mobileBottomNav');
+    var appLayout = document.getElementById('appLayout');
+    if (!nav) return;
+    if (window.innerWidth <= 768 && appLayout && appLayout.style.display !== 'none') {
+      nav.style.display = 'flex';
+    } else if (window.innerWidth > 768) {
+      nav.style.display = 'none';
+    }
+  }
+  window.addEventListener('resize', showMobileNavIfNeeded);
+  // Override setView to sync mobile nav active state
+  var _origSetView = window.setView;
+  if (typeof _origSetView === 'function') {
+    window.setView = function(view) {
+      _origSetView(view);
+      document.querySelectorAll('.mobile-nav-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.dataset.tab === view);
+      });
+      showMobileNavIfNeeded();
+    };
+  }
+  // Wait for DOM ready then check
+  document.addEventListener('DOMContentLoaded', showMobileNavIfNeeded);
+  setTimeout(showMobileNavIfNeeded, 500);
+})();
 </script>
 </body>
 </html>
